@@ -9878,3 +9878,928 @@ Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
 
 Neither business considerations nor technical considerations should be paramount. Software development is always an evolving dialog between the possible and the desirable. 
 ==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 722-723 | Added on Wednesday, July 4, 2012 5:42:41 PM
+
+Any program feature without an automated test simply doesn't exist. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 736-737 | Added on Wednesday, July 4, 2012 5:45:18 PM
+
+One partner, the one with the keyboard and the mouse, is thinking about the best way to implement this method right here. The other partner is thinking more strategically: q Is this whole approach going to work? q What are some other test cases 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 761-762 | Added on Wednesday, July 4, 2012 5:52:32 PM
+
+Overtime is a symptom of a serious problem on the project. The XP rule is simple—you can't work a second week of overtime. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 765-767 | Added on Wednesday, July 4, 2012 5:53:52 PM
+
+On-Site Customer A real customer must sit with the team, available to answer questions, resolve disputes, and set small-scale priorities. By "real customer" I mean someone who will really use the system when it is in production. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 856-857 | Added on Wednesday, July 4, 2012 8:15:18 PM
+
+Any one practice doesn't stand well on its own (with the possible exception of testing). They require the other practices to keep them in balance. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 859-860 | Added on Wednesday, July 4, 2012 8:15:42 PM
+
+Figure 4. The practices support each other 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 880-881 | Added on Wednesday, July 4, 2012 8:20:23 PM
+
+The basic XP management tool is the metric. For example, the ratio between estimated development time and calendar time is the basic measure for running the Planning Game. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 880-882 | Added on Wednesday, July 4, 2012 8:21:30 PM
+
+The basic XP management tool is the metric. For example, the ratio between estimated development time and calendar time is the basic measure for running the Planning Game. It lets the team set the Project Velocity. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 895-896 | Added on Wednesday, July 4, 2012 8:24:43 PM
+
+Coaching is primarily concerned with the technical execution (and evolution) of the process. The ideal coach is a good communicator, not easily panicked, technically skilled (although this is not an absolute requirement), and confident. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 898-900 | Added on Wednesday, July 4, 2012 8:25:37 PM
+
+The coach is just the opposite. The measure of a coach is how few technical decisions he or she makes: The job is to get everybody else making good decisions. The coach doesn't take responsibility for many development tasks. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 913-913 | Added on Wednesday, July 4, 2012 8:28:00 PM
+
+On my team, we reward ourselves with food and beverage. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 974-975 | Added on Thursday, July 5, 2012 8:09:40 AM
+
+I say, "Too bad." I have software to write, and if getting rid of a partition helps me write that software better, I'm going to do it. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1017-1018 | Added on Thursday, July 5, 2012 8:16:59 AM
+
+While the choice of a technology might seem at first to be a purely technical decision, it is actually a business decision, but one that must be taken with input from Development. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1153-1154 | Added on Tuesday, July 10, 2012 7:48:58 AM
+
+Collective ownership is this seemingly crazy idea that anyone can change any piece of code in the system at any time. Without the tests, you'd simply be dead trying to do this. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1162-1163 | Added on Tuesday, July 10, 2012 7:51:10 AM
+
+On an XP project you are never stuck with someone else's stupidity. You see something in the way, you get it out of the way. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1238-1239 | Added on Wednesday, July 11, 2012 8:00:50 AM
+
+Start with a test, so we will know when we are done. We have to do a certain amount of design just to write the test: 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1259-1260 | Added on Wednesday, July 11, 2012 8:07:21 AM
+
+When faced with a big refactoring, you have to take it in small steps (incremental change again). 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Bookmark Location 1263 | Added on Wednesday, July 11, 2012 8:08:00 AM
+
+
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1266-1268 | Added on Wednesday, July 11, 2012 8:08:48 AM
+
+In the year I spent on this system we made many small steps toward our desired design. We pushed responsibility in the Contract subclasses either into the Function or the Product subclasses. At the end of my contract we still hadn't eliminated the Contract subclasses, but they were much slimmer than at the beginning, and they were clearly on their way out. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1330-1331 | Added on Thursday, July 12, 2012 9:10:31 AM
+
+My objection is not to pictures, but to trying to keep multiple forms of the same information synchronized. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1367-1368 | Added on Friday, July 13, 2012 9:16:56 AM
+
+The tests are also automatic. Tests are most valuable when the stress level rises, when people are working too much, when human judgment starts to fail. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1389-1391 | Added on Friday, July 13, 2012 9:21:42 AM
+
+customers write tests story-by-story. The question they need to ask themselves is, "What would have to be checked before I would be confident that this story was done?" Each scenario they come up with turns into a test, in this case a functional test. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1397-1398 | Added on Friday, July 13, 2012 9:23:34 AM
+
+That's why an XP team of any size carries at least one dedicated tester. The tester's job is to translate the sometimes vague testing ideas of the customer into real, automatic, isolated tests. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1413-1414 | Added on Friday, July 13, 2012 6:17:21 PM
+
+Adopt XP one practice at a time, always addressing the most pressing problem for your team. Once that's no longer your most pressing problem, go on to the next problem. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1446-1447 | Added on Friday, July 13, 2012 6:24:50 PM
+
+When you need to fix a bug, write a test first. q When you need to refactor, write tests first. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1460-1460 | Added on Sunday, July 15, 2012 4:11:55 PM
+
+You will have to educate your customer about the rules of the game. The customer will have to decide what constitutes the next release. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1485-1486 | Added on Sunday, July 15, 2012 4:17:41 PM
+
+your chances of consistently adopting new practices aren't very good. Under stress, you revert to old habits. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1506-1508 | Added on Sunday, July 15, 2012 4:24:14 PM
+
+If a week won't suffice to get a particular piece of technology up and running, then I would have to classify that technology as a risk. It doesn't mean that you shouldn't use it. But you should explore it more carefully and consider alternatives. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1524-1525 | Added on Sunday, July 15, 2012 4:50:16 PM
+
+With a team that is completely new to a technology or domain, you might have to spend a few months. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1526-1527 | Added on Sunday, July 15, 2012 4:50:43 PM
+
+The purpose of the planning phase is for the customers and programmers to confidently agree on a date by which the smallest, most valuable set of stories will be done. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1533-1534 | Added on Sunday, July 15, 2012 4:56:44 PM
+
+The first iteration puts the architecture in place. Pick stories for the first iteration that will force you to create "the whole system," even if it is in skeletal form. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1539-1540 | Added on Sunday, July 15, 2012 4:59:21 PM
+
+Make a little ceremony out of the end of each iteration—buy pizza, shoot off fireworks, have the customer sign the completed story cards. Hey, you have just shipped quality software on time. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1563-1564 | Added on Sunday, July 15, 2012 5:04:50 PM
+
+While you are exploring, measure the effect production support has on your development activities. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1581-1582 | Added on Sunday, July 15, 2012 5:08:21 PM
+
+That's the good reason to die—the customer is happy with the system and can't think of anything they would like to add for the foreseeable future. (I've never experienced this, but I've heard about it, so I included it here.) 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1674-1675 | Added on Sunday, July 15, 2012 5:45:46 PM
+
+The next time the team is making estimates, you need to be able to say, "Two thirds of our estimates last time were at least 50% too high." 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1684-1685 | Added on Sunday, July 15, 2012 5:48:53 PM
+
+Coach As coach, you are responsible for the process as a whole. You notice when people are deviating from the team's process and bring this to the team's attention. You remain calm when everyone else is panicking, 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1719-1720 | Added on Sunday, July 15, 2012 6:46:31 PM
+
+For example, if you don't get them the new tester they asked for, they will explain exactly what they think that will do to the schedule. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1760-1761 | Added on Sunday, July 15, 2012 6:55:45 PM
+
+seems crazy, but sometimes it is easier to do something more complicated than to do something simple. This is particularly true when you have been successful doing the complicated thing in the past. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1779-1779 | Added on Sunday, July 15, 2012 6:59:34 PM
+
+Be prepared to have people react strongly when you explain XP, however. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1893-1894 | Added on Sunday, July 15, 2012 7:30:24 PM
+
+Completion Bonus An excellent way to align the interests of supplier and customer in fixed price or T&M is to provide a bonus for timely completion of the project. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1895-1896 | Added on Sunday, July 15, 2012 7:30:50 PM
+
+The evil twin of the completion bonus is the late penalty. 
+==========
+Extreme Programming Explained - Kent Beck (sinajahangir@gmail.com)
+- Your Highlight Location 1924-1927 | Added on Sunday, July 15, 2012 7:39:21 PM
+
+Doing work that doesn't matter q Having projects canceled because I didn't make enough technical progress q Making business decisions badly q Having business people make technical decisions badly for me q Coming to the end of a career of building systems and realizing that I should have spent more time with my kids q Doing work I'm not proud of 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 298-299 | Added on Sunday, July 15, 2012 7:54:46 PM
+
+When properly designed, multithreaded programs can improve throughput by utilizing available processor resources more effectively. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 328-328 | Added on Sunday, July 15, 2012 8:03:57 PM
+
+Non blocking I/O has its own benefits, but better OS support for threads means that there are fewer situations for which it is essential. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 350-351 | Added on Sunday, July 15, 2012 8:12:20 PM
+
+@NotThreadSafe public class UnsafeSequence { private int value; /** Returns a unique value. */ public int getNext() { return value++; } 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 423-424 | Added on Sunday, July 15, 2012 8:25:12 PM
+
+Often the easiest way to achieve this is to ensure that objects accessed by the TimerTask are themselves thread safe, thus encapsulating the thread safety within the shared objects. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 427-428 | Added on Sunday, July 15, 2012 8:25:51 PM
+
+The servlets specification requires that a servlet be prepared to be called simultaneously from multiple threads. In other words, servlets need to be thread safe. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 436-437 | Added on Sunday, July 15, 2012 8:28:38 PM
+
+When the RMI code calls your remote object, in what thread does that call happen? You don't know, but it's definitely not in a thread you created 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 446-447 | Added on Sunday, July 15, 2012 8:30:22 PM
+
+Swing programs achieve their thread safety by confining all access to GUI components to the event thread. If an application wants to manipulate the GUI from outside the event thread, it must cause the code that will manipulate the GUI to run in the event thread instead. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 473-473 | Added on Sunday, July 15, 2012 9:05:58 PM
+
+It is far easier to design a class to be thread safe than to retrofit it for thread safety later. 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 2580-2583 | Added on Monday, July 16, 2012 2:06:03 AM
+
+Throughout recorded time, and probably since the end of the Neolithic Age, there have been three kinds of people in the world, the High, the Middle, and the Low. They have been subdivided in many ways, they have borne countless different names, and their relative numbers, as well as their attitude towards one another, 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 2700-2702 | Added on Monday, July 23, 2012 8:07:42 AM
+
+to reflect that hereditary aristocracies have always been shortlived, whereas adoptive organizations such as the Catholic Church have sometimes lasted for hundreds or thousands of years. The essence of oligarchical rule is not father-to-son inheritance, but the persistence of a certain world-view and a certain way of life, imposed by the dead upon the living. 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Bookmark Location 3082 | Added on Sunday, July 29, 2012 4:11:37 PM
+
+
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 3121-3124 | Added on Monday, July 30, 2012 9:21:40 AM
+
+He confessed that he had been a spy in the pay of the Eastasian government as far back as 1968. He confessed that he was a religious believer, an admirer of capitalism, and a sexual pervert. He confessed that he had murdered his wife, although he knew, and his questioners must have known, that his wife was still alive. 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 3428-3429 | Added on Tuesday, July 31, 2012 8:41:48 PM
+
+By making him suffer. Obedience is not enough. Unless he is suffering, how can you be sure that he is obeying your will and not his own? 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 3434-3436 | Added on Tuesday, July 31, 2012 8:43:24 PM
+
+Already we are breaking down the habits of thought which have survived from before the Revolution. We have cut the links between child and parent, and between man and man, and between man and woman. No one dares trust a wife or a child or a friend any longer. But in the future there will be no wives and no friends. 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 3611-3611 | Added on Wednesday, August 1, 2012 9:22:59 AM
+
+if you want to keep a secret you must also hide it from yourself. 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 3671-3674 | Added on Wednesday, August 1, 2012 6:49:32 PM
+
+I press this other lever, the door of the cage will slide up. These starving brutes will shoot out of it like bullets. Have you ever seen a rat leap through the air? They will leap on to your face and bore straight into it. Sometimes they attack the eyes first. Sometimes they burrow through the cheeks and devour the tongue.” 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 3754-3759 | Added on Wednesday, August 1, 2012 8:31:00 PM
+
+“Sometimes,” she said, “they threaten you with something something you can’t stand up to, can’t even think about. And then you say, ‘Don’t do it to me, do it to somebody else, do it to Soand-so.’ And perhaps you might pretend, afterwards, that it was only a trick and that you just said it to make them stop and didn’t really mean it. But that isn’t true. At the time when it happens you do mean it. You think there’s no other way of saving yourself, and you’re quite ready to save yourself that way. You want it to happen to the other person. You don’t give a damn what they suffer. All you care about is yourself.” 
+==========
+George Orwell - 1984 (English version) (sinajahangir@gmail.com)
+- Your Highlight Location 3829-3830 | Added on Wednesday, August 1, 2012 8:49:32 PM
+
+Two gin-scented tears trickled down the sides of his nose. But it was all right, everything was all right, the struggle was finished. He had won the victory over himself. He loved Big Brother. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 527-529 | Added on Thursday, August 2, 2012 9:38:12 PM
+
+One thread accessing a StatelessFactorizer cannot influence the result of another thread accessing the same StatelessFactorizer; because the two threads do not share state, it is as if they were accessing different instances. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 531-532 | Added on Thursday, August 2, 2012 9:39:00 PM
+
+It is only when servlets want to remember things from one request to another that the thread safety requirement becomes an issue. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 548-549 | Added on Thursday, August 2, 2012 9:46:48 PM
+
+The possibility of incorrect results in the presence of unlucky timing is so important in concurrent programming that it has a name: a race condition. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 583-585 | Added on Thursday, August 2, 2012 9:51:51 PM
+
+@NotThreadSafe public class LazyInitRace { private ExpensiveObject instance = null; public ExpensiveObject getInstance() { if (instance == null) instance = new ExpensiveObject(); return instance; } } 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 607-608 | Added on Thursday, August 2, 2012 9:54:46 PM
+
+We refer collectively to check then act and read modify write sequences as compound actions: sequences of operations that must be executed atomically in order to remain thread safe. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 611-611 | Added on Thursday, August 2, 2012 9:55:10 PM
+
+private final AtomicLong count = new AtomicLong(0); 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 656-657 | Added on Thursday, August 2, 2012 10:04:54 PM
+
+Every Java object can implicitly act as a lock for purposes of synchronization; these built in locks are called intrinsic locks or monitor locks. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 660-661 | Added on Thursday, August 2, 2012 10:05:35 PM
+
+Intrinsic locks in Java act as mutexes (or mutual exclusion locks), which means that at most one thread may own the lock. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 677-680 | Added on Friday, August 3, 2012 9:25:24 AM
+
+Reentrancy is implemented by associating with each lock an acquisition count and an owning thread. When the count is zero, the lock is considered unheld. When a thread acquires a previously unheld lock, the JVM records the owner and sets the acquisition count to one. If that same thread acquires the lock again, the count is incremented, and when the owning thread exits the synchronized block, the count is decremented. When the count reaches zero, the lock is released. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 682-687 | Added on Friday, August 3, 2012 9:27:56 AM
+
+Without reentrant locks, the very natural looking code in Listing 2.7, in which a subclass overrides a synchronized method and then calls the superclass method, would deadlock. Because the doSomething methods in Widget and LoggingWidget are both synchronized, each tries to acquire the lock on the Widget before proceeding. But if intrinsic locks were not reentrant, the call to super.doSomething would never be able to acquire the lock because it would be considered already held, and the thread would permanently stall waiting for a lock it can never acquire. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 694-696 | Added on Friday, August 3, 2012 9:29:01 AM
+
+Serializing access to an object has nothing to do with object serialization (turning an object into a byte stream); serializing access means that threads take turns accessing the object exclusively, rather than doing so concurrently. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 707-708 | Added on Thursday, August 9, 2012 9:14:45 AM
+
+The fact that every object has a built in lock is just a convenience so that you needn't explicitly create lock objects. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 734-737 | Added on Thursday, August 9, 2012 9:21:13 AM
+
+synchronizing every method, as Vector does, is not enough to render compound actions on a Vector atomic: if (!vector.contains(element)) vector.add(element); This attempt at a put if absent operation has a race condition, even though both contains and add are atomic. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 737-738 | Added on Thursday, August 9, 2012 9:21:28 AM
+
+additional locking is required when multiple operations are combined into a compound action. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Bookmark Location 737 | Added on Thursday, August 9, 2012 9:21:30 AM
+
+
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 763-765 | Added on Friday, August 10, 2012 6:20:55 PM
+
+The portions of code that are outside the synchronized blocks operate exclusively on local (stack based) variables, which are not shared across threads and therefore do not require synchronization. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 817-819 | Added on Saturday, August 18, 2012 2:08:31 PM
+
+There is no guarantee that operations in one thread will be performed in the order given by the program, as long as the reordering is not detectable from within that thread even if the reordering is apparent to other threads.[1] 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 821-823 | Added on Saturday, August 18, 2012 2:08:55 PM
+
+in the absence of synchronization, the Java Memory Model permits the compiler to reorder operations and cache values in registers, and permits CPUs to reorder operations and cache values in processor specific caches. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 838-839 | Added on Saturday, August 18, 2012 2:12:22 PM
+
+Reading data without synchronization is analogous to using the READ_UNCOMMITTED isolation level in a database, where you are willing to trade accuracy for performance. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 851-855 | Added on Saturday, August 18, 2012 2:15:09 PM
+
+Out of thin air safety applies to all variables, with one exception: 64 bit numeric variables (double and long) that are not declared volatile (see Section 3.1.4). The Java Memory Model requires fetch and store operations to be atomic, but for nonvolatile long and double variables, the JVM is permitted to treat a 64 bit read or write as two separate 32 bit operations. If the reads and writes occur in different threads, it is therefore possible to read a nonvolatile long 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 862-864 | Added on Saturday, August 18, 2012 2:21:10 PM
+
+and subsequently thread B enters a synchronized block guarded by the same lock, the values of variables that were visible to A prior to releasing the lock are guaranteed to be visible to B upon acquiring the lock. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 872-874 | Added on Saturday, August 18, 2012 2:27:33 PM
+
+When a field is declared volatile, the compiler and runtime are put on notice that this variable is shared and that operations on it should not be reordered with other memory operations. Volatile variables are not cached in registers or in caches where they are hidden from other processors, so a read of a volatile variable always returns the most recent write by any thread. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 885-885 | Added on Saturday, August 18, 2012 2:29:13 PM
+
+volatile variables for visibility of arbitrary state is more fragile and harder to understand than code that uses locking. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 950-951 | Added on Saturday, August 18, 2012 3:06:30 PM
+
+A common mistake that can let the this reference escape during construction is to start a thread from a constructor. When an object creates a thread from its constructor, it almost always shares its this reference with the new thread, 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 965-967 | Added on Saturday, August 18, 2012 3:21:40 PM
+
+Swing uses thread confinement extensively. The Swing visual components and data model objects are not thread safe; instead, safety is achieved by confining them to the Swing event dispatch thread. To use Swing properly, code running in threads other than the event thread should not access these objects. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 971-973 | Added on Saturday, August 18, 2012 3:23:25 PM
+
+Another common application of thread confinement is the use of pooled JDBC (Java Database Connectivity) Connection objects. The JDBC specification does not require that Connection objects be thread safe.[9] In typical server applications, a thread acquires a connection from the pool, uses it for processing a single request, and returns it. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 987-988 | Added on Saturday, August 18, 2012 3:26:15 PM
+
+Another reason to make a subsystem single threaded is deadlock avoidance; this is one of the primary reasons most GUI frameworks are single threaded. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1030-1032 | Added on Saturday, August 18, 2012 4:39:44 PM
+
+Conceptually, you can think of a ThreadLocal<T> as holding a Map<Thread,T> that stores the thread specific values, though this is not how it is actually implemented. The thread specific values are stored in the Thread object itself; when the thread terminates, the thread specific values can be garbage collected. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1021-1022 | Added on Saturday, August 18, 2012 4:40:13 PM
+
+private static ThreadLocal<Connection> connectionHolder = new ThreadLocal<Connection>() { public Connection initialValue() { return DriverManager.getConnection(DB_URL); } }; 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1055-1056 | Added on Saturday, August 18, 2012 4:49:08 PM
+
+An object whose fields are all final may still be mutable, since final fields can hold references to mutable objects. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1056-1058 | Added on Saturday, August 18, 2012 4:50:38 PM
+
+An object is immutable if: Its state cannot be modified after construction; All its fields are final;[12] and It is properly constructed (the this reference does not escape during construction). 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1071-1072 | Added on Monday, August 20, 2012 9:39:30 PM
+
+There is a difference between an object being immutable and the reference to it being immutable. Program state stored in immutable objects can still be updated by "replacing" immutable objects with a new instance holding new state; 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1083-1084 | Added on Monday, August 20, 2012 9:46:29 PM
+
+it is a good practice to make all fields final unless they need to be mutable. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1241-1242 | Added on Tuesday, August 21, 2012 9:41:15 AM
+
+The built in mechanisms for efficiently waiting for a condition to become true wait and notify are tightly bound to intrinsic locking, and can be difficult to use correctly. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1242-1244 | Added on Tuesday, August 21, 2012 9:41:51 AM
+
+To create operations that wait for a precondition to become true before proceeding, it is often easier to use existing library classes, such as blocking queues or semaphores, to provide the desired state dependent behavior. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1302-1305 | Added on Tuesday, August 21, 2012 7:31:26 PM
+
+the class library provides wrapper factory methods (Collections.synchronizedList and friends) so they can be used safely in multithreaded environments. These factories use the Decorator pattern (Gamma et al., 1995) to wrap the collection with a synchronized wrapper object; the wrapper implements each method of the appropriate interface as a synchronized method that forwards the request to the underlying collection object. 
+==========
+java_concurrency_in_practice (sinajahangir@gmail.com)
+- Your Highlight Location 1323-1326 | Added on Tuesday, August 21, 2012 7:34:16 PM
+
+There are advantages to using a private lock object instead of an object's intrinsic lock (or any other publicly accessible lock). Making the lock object private encapsulates the lock so that client code cannot acquire it, whereas a publicly accessible lock allows client code to participate in its synchronization policy correctly or incorrectly. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 87-88 | Added on Monday, September 10, 2012 9:39:45 AM
+
+Red/green/refactorthe TDD mantra. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 96-97 | Added on Wednesday, September 12, 2012 7:06:06 PM
+
+Test-driven development is a way of managing fear during programming. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 115-116 | Added on Monday, September 17, 2012 9:13:13 AM
+
+There certainly are programming tasks that can't be driven solely by tests (or at least, not yet). Security software and concurrency, for example, are two topics where TDD is insufficient 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 374-376 | Added on Saturday, September 22, 2012 7:51:25 PM
+
+only generalize code when we have two examples or more. We briefly ignore the duplication between test and model code. When the second example demands a more general solution, then and only then do we generalize. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 460-461 | Added on Saturday, September 22, 2012 8:07:19 PM
+
+Wallace Stegner describes a character's workshop. Every item is perfectly in place, the floor is spotless, all is order and cleanliness. The character, however, has never made anything. "Preparing has been his life's work. He prepares, then he cleans up." 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1109-1111 | Added on Wednesday, September 26, 2012 10:24:24 PM
+
+done later. Finally, when the list is empty is a good time to review the design. Do the words and concepts play together? Is there duplication that is difficult to eliminate given the current design? 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1140-1141 | Added on Wednesday, September 26, 2012 10:28:06 PM
+
+There are roughly as many lines and functions in the test and functional code. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1165-1166 | Added on Thursday, September 27, 2012 9:07:20 AM
+
+Defect insertion is another way of evaluating test quality. The idea is simple: change the meaning of a line of code and a test should break. You can do this manually, or with a tool such as Jester 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1276-1278 | Added on Friday, September 28, 2012 9:06:52 AM
+
+Test coupling can have a subtle but very nasty effect, in situations in which the order of tests matters: If I run test A before test B, they both work, but if I run test B before test A, then test A fails. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1432-1432 | Added on Wednesday, October 3, 2012 9:21:45 AM
+
+Duplication is always a bad thing, unless you look at it as motivation to find the missing design element. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1505-1505 | Added on Wednesday, October 3, 2012 9:14:06 PM
+
+Martin Fowler said, "Never in the annals of software engineering was so much owed by so many to so few lines of code." 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1507-1508 | Added on Wednesday, October 3, 2012 9:15:26 PM
+
+I'm faced with a new programming language, I implement xUnit. By the time I have the first eight to ten tests running, I have explored many of the facilities I will be using in daily programming. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1532-1533 | Added on Wednesday, October 3, 2012 9:20:36 PM
+
+The more stress you feel, the less testing you will do. The less testing you do, the more errors you will make. The more errors you make, the more stress you feel. Rinse and repeat. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1536-1537 | Added on Wednesday, October 3, 2012 9:21:10 PM
+
+With automated tests, when I start to feel stress, I run the tests. Tests are the Programmer's Stone, transmuting fear into boredom. "No, I didn't break anything. The tests are all still green." The more stress I feel, the more I run the tests. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1541-1542 | Added on Wednesday, October 3, 2012 9:22:14 PM
+
+was working with a couple of very sharp younger programmers on implementing in-memory transactions (a very cool technique every programming language should have). 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1572-1573 | Added on Wednesday, October 3, 2012 9:35:47 PM
+
+I had a similar list, but with a weekly or monthly scope, pinned on the wall. As soon as I had all that written down, I knew I wasn't going to forget something. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1596-1596 | Added on Wednesday, October 3, 2012 9:40:44 PM
+
+What if we adopted the rule that we would always test first? 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1603-1605 | Added on Wednesday, October 3, 2012 9:42:13 PM
+
+When I test assert-first, I find it has a powerful simplifying effect. When you are writing a test, you are solving several problems at once, even if you no longer have to think about the implementation. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1650-1651 | Added on Wednesday, October 3, 2012 9:47:44 PM
+
+Each test should represent one step toward your overall goal. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1713-1714 | Added on Wednesday, October 3, 2012 9:56:20 PM
+
+What's the first thing you do when a defect is reported? Write the smallest possible test that fails and that, once run, will be repaired. Regression tests are tests that, with perfect foreknowledge, you would have written when coding originally. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1843-1844 | Added on Thursday, October 4, 2012 8:47:38 PM
+
+How do you leave a programming session when you're programming alone? Leave the last test broken. Richard Gabriel taught me the trick of finishing a writing session in midsentence. When you sit back down, 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1899-1900 | Added on Saturday, October 6, 2012 3:39:14 PM
+
+Triangulate How do you most conservatively drive abstraction with tests? Abstract only when you have two or more examples. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 1969-1972 | Added on Saturday, October 6, 2012 4:52:04 PM
+
+Wishing for white box testing is not a testing problem, it is a design problem. Anytime I want to use a variable as a way of checking to see whether code ran correctly or not, I have an opportunity to improve the design. If I give in to my fear and just check the variable, then I lose that opportunity. That said, if the design idea doesn't come, it doesn't come. I'll check the variable, shed a tear, make a note to come back on one of my smarter days, and move on. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2035-2036 | Added on Saturday, October 6, 2012 5:00:30 PM
+
+Module ("package" in Java) 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2082-2085 | Added on Saturday, October 6, 2012 5:08:12 PM
+
+most of the problems we solve are generated by the tools we use, not by the external problem at hand.[1] Because of this, we can expect to find (and actually do find) common problems with common solutions even in the midst of an incredible diversity of external problem solving contexts. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2144-2145 | Added on Saturday, October 6, 2012 5:18:28 PM
+
+Null Object How do you represent special cases using objects? Create an object representing the special case. Give it the same protocol as the regular objects. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2311-2313 | Added on Saturday, October 6, 2012 7:13:59 PM
+
+Singleton How do you provide global variables in languages without global variables? Don't. Your programs will thank you for taking the time to think about design instead. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2470-2470 | Added on Saturday, October 6, 2012 8:07:48 PM
+
+"Write tests until fear is transformed into boredom." 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2474-2476 | Added on Saturday, October 6, 2012 8:08:57 PM
+
+Sometimes, just to be extra careful, I will document the presence of, um, unusual behavior in external code with a test that will fail if the bug is ever fixed, er, the behavior is ever refined. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2507-2508 | Added on Saturday, October 6, 2012 8:14:05 PM
+
+I think about Mean Time Between Failures (MTBF) when I think about how many tests to write. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2512-2513 | Added on Saturday, October 6, 2012 8:15:09 PM
+
+If you are trying to get from an MTBF of 10 years to an MTBF of 100 years in your pacemaker, then tests for extremely unlikely conditions and combinations of conditions make sense, 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2546-2546 | Added on Saturday, October 6, 2012 8:32:43 PM
+
+application test-driven development (ATDD). 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2572-2574 | Added on Saturday, October 6, 2012 10:53:13 PM
+
+Good engineering is maybe 20 percent of a project's success. Bad engineering will certainly sink projects, but modest engineering can enable project success as long as the other 80 percent lines up right. From this perspective, TDD is overkill. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Bookmark Location 2590 | Added on Saturday, October 6, 2012 10:56:59 PM
+
+
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2607-2608 | Added on Saturday, October 6, 2012 10:59:48 PM
+
+My own practice of programming became much less stressful when I started with TDD. No longer did I have to worry about everything at once. 
+==========
+test-driven development by example - addison wesley (sinajahangir@gmail.com)
+- Your Highlight Location 2627-2629 | Added on Saturday, October 6, 2012 11:04:18 PM
+
+Driven I used to call TDD "test-first programming." However, the opposite of "first" is "last," and lots of people test after they have programmed. There is a naming rule that the opposite of a name should be at least vaguely unsatisfactory. 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 92-93 | Added on Saturday, October 6, 2012 11:17:44 PM
+
+If you persist in bringing old habits from other languages to your Rails development, and trying to use patterns you learned elsewhere, you may have a less happy experience. 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 93-94 | Added on Saturday, October 6, 2012 11:17:52 PM
+
+DRY 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 94-94 | Added on Saturday, October 6, 2012 11:17:59 PM
+
+Convention Over Configuration 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 158-158 | Added on Saturday, October 6, 2012 11:24:46 PM
+
+rails generate controller welcome index 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 171-172 | Added on Saturday, October 6, 2012 11:26:18 PM
+
+Rails will serve any static file in the public directory that matches a route in preference to any dynamic content you generate from the controllers. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 188-189 | Added on Sunday, October 7, 2012 1:19:58 PM
+
+For example: /* var rm_a = /a*/.match(s); */ causes a syntax error. So, it is recommended that/* */comments be avoided and// comments be used 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 198-198 | Added on Sunday, October 7, 2012 1:22:16 PM
+
+JavaScript has a single number type. Internally, it is represented as 64-bit floating point, the same as Java’sdouble. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 204-205 | Added on Sunday, October 7, 2012 1:23:13 PM
+
+The value NaNis a number value that is the result of an operation that cannot produce a normal result.NaNis not equal to any value, including itself. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 205-205 | Added on Sunday, October 7, 2012 1:23:27 PM
+
+You can detect NaN with theisNaN(number) function. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 218-218 | Added on Sunday, October 7, 2012 1:33:13 PM
+
+Strings are immutable. Once it is made, a string can never be changed. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 223-224 | Added on Sunday, October 7, 2012 1:35:31 PM
+
+When used inside of a function, the var statement defines the function’s private variables. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 233-235 | Added on Sunday, October 7, 2012 1:42:30 PM
+
+Here are the falsy values: • false • null • undefined • The empty string'' • The number0 • The numberNaN All other values are truthy, includingtrue, the string'false', and all objects. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 251-252 | Added on Sunday, October 7, 2012 1:46:01 PM
+
+It is usually necessary to test object.hasOwnProperty(variable)to determine whether the property name is truly a member of the object or was found instead on the prototype chain. for (myvar in obj) { if (obj.hasOwnProperty(myvar)) { ... } } 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 282-283 | Added on Sunday, October 7, 2012 1:54:12 PM
+
+The values produced by typeof are 'number', 'string', 'boolean', 'undefined', 'function', and 'object'. If the operand is an array or null, then the result is 'object', which is wrong. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 288-288 | Added on Sunday, October 7, 2012 1:57:14 PM
+
+not equal !== 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 307-309 | Added on Sunday, October 7, 2012 2:01:22 PM
+
+Objects in JavaScript are mutable keyed collections. In JavaScript, arrays are objects, functions are objects, regular expressions are objects, and, of course, objects are objects. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 323-324 | Added on Sunday, October 7, 2012 2:04:56 PM
+
+The undefined value is produced if an attempt is made to retrieve a nonexistent member: 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 325-325 | Added on Sunday, October 7, 2012 2:07:05 PM
+
+The|| operator can be used to fill in default values: var middle = stooge["middle-name"] || "(none)"; 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 326-328 | Added on Sunday, October 7, 2012 2:07:52 PM
+
+Attempting to retrieve values fromundefinedwill throw aTypeErrorexception. This can be guarded against with the&& operator: flight.equipment // undefined flight.equipment.model // throw "TypeError" flight.equipment && flight.equipment.model // undefined 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 331-331 | Added on Sunday, October 7, 2012 2:09:05 PM
+
+Objects are passed around by reference. They are never copied: 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 334-335 | Added on Sunday, October 7, 2012 2:10:38 PM
+
+Every object is linked to a prototype object from which it can inherit properties. All objects created from object literals are linked to Object.prototype, an object that comes standard with JavaScript. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 356-357 | Added on Sunday, October 7, 2012 2:21:24 PM
+
+. The most common filters are thehasOwnPropertymethod and using typeof to exclude functions: 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 372-373 | Added on Sunday, October 7, 2012 2:31:42 PM
+
+p>By reducing your global footprint to a single name, you significantly reduce the chance of bad interactions with other applications, 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 378-379 | Added on Sunday, October 7, 2012 2:33:28 PM
+
+p>A function encloses a set of statements. Functions are the fundamental modular unit of JavaScript. They are used for code reuse, information hiding, and composition. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 381-383 | Added on Sunday, October 7, 2012 2:34:29 PM
+
+. Objects produced from object literals are linked to Object.prototype. Function objects are linked to Function.prototype (which is itself linked toObject.prototype). Every function is also created with two additional hidden properties: the function’s context and the code that implements the function’s behavior. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 391-392 | Added on Sunday, October 7, 2012 2:36:02 PM
+
+If a function is not given a name, as shown in the previous example, it is said to be anonymous. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 398-399 | Added on Sunday, October 7, 2012 2:37:50 PM
+
+The function object created by a function literal contains a link to that outer context. This is called closure. This is the source of enormous expressive power. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 416-418 | Added on Monday, October 8, 2012 2:35:53 PM
+
+When a function is not the property of an object, then it is invoked as a function: var sum = add(3, 4); // sum is 7 When a function is invoked with this pattern, thisis bound to the global object. This was a mistake in the design of the language. Had the language been designed correctly, when the inner function is invoked,thiswould still be bound to 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 408-409 | Added on Monday, October 8, 2012 2:38:24 PM
+
+When a function is stored as a property of an object, we call it a method. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 412-412 | Added on Monday, October 8, 2012 2:38:31 PM
+
+increment: function 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 422-423 | Added on Monday, October 8, 2012 2:40:31 PM
+
+myObject.double = function ( ) { var that = this; // Workaround. var helper = function ( ) { that.value = add(that.value, that.value); }; 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 433-436 | Added on Monday, October 8, 2012 2:44:41 PM
+
+Functions that are intended to be used with thenewprefix are called constructors.By convention, they are kept in variables with a capitalized name. If a constructor is called without thenewprefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 437-437 | Added on Monday, October 8, 2012 2:47:10 PM
+
+Because JavaScript is a functional object-oriented language, functions can have methods. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 453-454 | Added on Monday, October 8, 2012 2:50:33 PM
+
+A function always returns a value. If thereturnvalue is not specified, thenundefined is returned. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 457-458 | Added on Monday, October 8, 2012 6:32:52 PM
+
+throw { name: 'TypeError', message: 'add needs numbers' }; 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 475-476 | Added on Monday, October 8, 2012 6:36:53 PM
+
+Because of the dynamic nature of JavaScript’s prototypal inheritance, all values are immediately endowed with the new methods, even values that were created before the methods were created. 
+==========
+JavaScript the Good Parts (sinajahangir@gmail.com)
+- Your Highlight Location 505-506 | Added on Monday, October 8, 2012 6:42:31 PM
+
+Unfortunately, JavaScript does not currently provide tail recursion optimization. Functions that recurse very deeply can fail by exhausting the return stack: 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 213-213 | Added on Monday, October 8, 2012 6:50:01 PM
+
+rails g controller posts 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 293-294 | Added on Monday, October 8, 2012 6:59:19 PM
+
+rails generate model Post title:string text:text 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 319-319 | Added on Monday, October 8, 2012 7:01:54 PM
+
+rake db:migrate RAILS_ENV=production. 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 392-395 | Added on Tuesday, October 9, 2012 7:52:30 PM
+
+Notice that inside the create action we use render instead of redirect_to when save returns false. The render method is used so that the @post object is passed back to the new template when it is rendered. This rendering is done within the same request as the form submission, whereas the redirect_to will tell the browser to issue another request. 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 399-400 | Added on Tuesday, October 9, 2012 7:53:55 PM
+
+pluralize(@post.errors.count, "error") 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 483-483 | Added on Wednesday, October 10, 2012 9:38:00 AM
+
+If you run rake routes from the console 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 492-494 | Added on Wednesday, October 10, 2012 9:39:11 AM
+
+:as => :post The :as option tells the get method that we want to make routing helpers called post_url and post_path available to our application. 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 517-518 | Added on Wednesday, October 10, 2012 7:21:01 PM
+
+:'data-confirm' options are used as HTML5 attributes so that when the link is clicked, Rails will first show a confirm dialog to the user, 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 529-529 | Added on Wednesday, October 10, 2012 7:22:50 PM
+
+resources :posts 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 567-567 | Added on Wednesday, October 10, 2012 7:26:05 PM
+
+belongs_to 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 570-570 | Added on Wednesday, October 10, 2012 7:26:19 PM
+
+has_many 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 576-577 | Added on Wednesday, October 10, 2012 7:26:49 PM
+
+resources :posts do resources :comments end This creates comments as a nested resource within posts. 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 599-599 | Added on Wednesday, October 10, 2012 7:29:00 PM
+
+form_for 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 705-706 | Added on Thursday, October 11, 2012 9:56:11 AM
+
+If possible, use UTF-8 as the internal storage of your database. 
+==========
+Ruby on Rails Guides (6d87cd0) (Ruby on Rails)
+- Your Highlight Location 713-714 | Added on Thursday, October 11, 2012 9:57:33 AM
+
+The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. 
+==========

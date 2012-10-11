@@ -1,4 +1,4 @@
-file = 'input.txt'
+file = 'input2.txt'
 raise "Error: file not found: #{file}" unless File.exists? file
 
 map = Hash.new
