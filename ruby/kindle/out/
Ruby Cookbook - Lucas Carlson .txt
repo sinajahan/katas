@@ -1,0 +1,24 @@
+
+
+
+If all else fails, download the Ruby source code and 
+
+
+
+compile it yourself. You can get the Ruby source code through FTP or HTTP by visiting http://www.ruby lang.org/. 
+
+
+
+There are a few articles especially for Java programmers who want to learn Ruby: Jim Weirich's "10 Things Every Java Programmer Should Know About Ruby" (http://onestepback.org/articles/10things/), 
+
+
+
+Ruby strings are dynamic, mutable, and flexible. 
+
+
+
+In Ruby, parentheses are almost always optional. 
+
+
+
+Ruby treats a string as a series of bytes. 

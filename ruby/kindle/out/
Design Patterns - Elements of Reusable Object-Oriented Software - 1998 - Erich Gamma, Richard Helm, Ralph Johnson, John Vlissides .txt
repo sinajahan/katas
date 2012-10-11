@@ -1,0 +1,232 @@
+
+
+
+Concurrent Programming in Java™: 
+
+
+
+Once you understand the design patterns and have had an "Aha!" (and not just a "Huh?") experience with them, you won't ever think about object-oriented design in the same way. 
+
+
+
+Don't worry if you don't understand this book completely on the first reading. We didn't understand it all on the first writing! Remember that this isn't a book to read once and put on a shelf. 
+
+
+
+divide the design patterns into three types: creational, structural, and behavioral. 
+
+
+
+design is difficult if not impossible to get "right" the first time. 
+
+
+
+One thing expert designers know not to do is solve every problem from first principles. Rather, they reuse solutions that have worked for them in the past. 
+
+
+
+Novelists and playwrights rarely design their plots from scratch. Instead, they 
+
+
+
+follow patterns like "Tragically Flawed Hero" (Macbeth, Hamlet, etc.) or "The Romantic Novel" (countless romance novels). 
+
+
+
+1. The pattern name 
+
+
+
+2. The problem 
+
+
+
+3. The solution 
+
+
+
+4. The consequences are the results and trade-offs of applying the pattern. 
+
+
+
+Design patterns are not about designs such as linked lists and hash tables that can be encoded in classes and reused as is. Nor are they complex, domain-specific designs for an entire application or subsystem. The design patterns in this book are descriptions of communicating objects and classes that are 
+
+
+
+The Model/View/Controller (MVC) triad of classes [KP88] is used to build user interfaces in Smalltalk-80. 
+
+
+
+MVC decouples them to increase flexibility and reuse. 
+
+
+
+This approach lets you attach multiple views to a model to provide different presentations. 
+
+
+
+
+
+
+
+Another feature of MVC is that views can be nested. 
+
+
+
+Creational patterns concern the process of object creation. Structural patterns deal with the composition of classes or objects. Behavioral patterns characterize the ways in which classes or objects interact and distribute responsibility. 
+
+
+
+The second criterion, called scope, specifies whether the pattern applies primarily to classes or to objects. 
+
+
+
+Note that most patterns are in the Object scope. 
+
+
+
+Operations are the only way to change an object's internal data. 
+
+
+
+The Facade (185) pattern describes how to represent complete subsystems as objects, 
+
+
+
+A type is a name used to denote a particular interface. 
+
+
+
+The run-time association of a request to an object and one of its operations is known as dynamic binding. 
+
+
+
+that issuing a request doesn't commit you to a particular implementation until runtime. 
+
+
+
+This substitutability is known as polymorphism, and it's a key concept in object-oriented systems. 
+
+
+
+A dashed arrowhead line 
+
+
+
+indicates a class that instantiates objects of another class. 
+
+
+
+Classes that aren't abstract are called concrete classes. 
+
+
+
+Programming to an Interface, not an Implementation 
+
+
+
+Inheritance versus Composition The two most common techniques for reusing functionality in object-oriented systems are class inheritance and object composition. 
+
+
+
+Because inheritance exposes a subclass to details of its parent's implementation, it's often said that "inheritance breaks encapsulation" 
+
+
+
+Favor object composition over class inheritance. 
+
+
+
+For example, instead of making class Window a subclass of Rectangle (because windows happen to be rectangular), the Window class might reuse the behavior of Rectangle by keeping a Rectangle instance variable and delegating 
+
+
+
+A plain arrowhead line indicates that a class keeps a reference to an instance of another class. 
+
+
+
+Delegation is an extreme example of object composition. 
+
+
+
+Delegation is an extreme example of object composition. It shows that you can always replace inheritance with object composition as a mechanism for code reuse. 
+
+
+
+Parameterized types let you 
+
+
+
+change the types that a class can use. 
+
+
+
+Aggregation implies that an aggregate object and its owner have identical lifetimes. 
+
+
+
+Acquainted objects may request operations of each other, but they aren't responsible 
+
+
+
+In our diagrams, a plain arrowhead line denotes acquaintance. An arrowhead line with a diamond at its base denotes aggregation: 
+
+
+
+Ultimately, acquaintance and aggregation are determined more by intent than by explicit language mechanisms. 
+
+
+
+Creating an object by specifying a class explicitly. 
+
+
+
+Dependence on hardware and software platform. 
+
+
+
+Dependence on object representations or implementations. Clients that know how an object is represented, stored, located, or implemented might need to be changed when the object changes. 
+
+
+
+Algorithmic dependencies. 
+
+
+
+For example, overriding one operation might require overriding another. 
+
+
+
+Extending functionality by subclassing. 
+
+
+
+Toolkit design is arguably harder than application design, because toolkits have to work in many applications to be useful. 
+
+
+
+Frameworks A framework is a set of cooperating classes that make up a reusable design for a specific class of software 
+
+
+
+The framework captures the design decisions that are common to its application domain. Frameworks thus emphasize design reuse over code reuse, 
+
+
+
+Frameworks always have a particular application domain. 
+
+
+
+They are the way that object-oriented systems achieve the most reuse. 
+
+
+
+The Composite (163) pattern captures the essence of recursive composition in object-oriented terms. 
+
+
+
+Strategy Pattern Encapsulating an algorithm in an object is the intent of the Strategy (315) pattern. 
+
+
+
+All this leads us to the concept of transparent enclosure, which combines the notions of (1) single-child (or singlecomponent) composition and (2) compatible interfaces. 

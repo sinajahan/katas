@@ -1,0 +1,12 @@
+
+
+
+To keep things simple, AWS marks the AMIs that are available in the Free Usage Tier with a star. 
+
+
+
+In production, you'll authorize only a specific IP 
+
+
+
+Connect Using the MindTerm (SSH) Client 

@@ -1,0 +1,40 @@
+
+
+
+you can find a more detailed description in Kent’s book Implementation Patterns, along with few fundamental practices such as the application of symmetry. 
+
+
+
+The best kind of flexibility comes from simplicity coupled with extensive tests. 
+
+
+
+Instead of any planning, Kent just asked us what would be the demo we would like to show at the end of the day. And his next question was what test to write. 
+
+
+
+Now the interesting thing is that this is not a unit test. It is basically an integration test, or to use a less technical term, a story test exercising a rather high-level feature. A feature of interest to the customer. While a unit tests tells me “this class is working as intended,” a story test tells me “this feature works as intended”. 
+
+
+
+Write Implementation in Tests, Refactor Later 
+
+
+
+Thus the first test is not truly “unit” test as it depends on the correctness of another method of the tested class. 
+
+
+
+should be limited to the “private unit tests,” as described and argued in Never Mix Public and Private Unit Tests! 
+
+
+
+Put tasks that pop up on a Later list instead of doing them at once 
+
+
+
+I get paid for code that works, not for tests, so my philosophy is to test as little as possible to reach a given level of confidence 
+
+
+
+Manage your energy – be aware of your energy and stop before becoming tired. Don’t forget to take breaks. A rested developer is multiple times more productive than a tired one. 

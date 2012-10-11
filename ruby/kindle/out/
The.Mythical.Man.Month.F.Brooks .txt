@@ -1,0 +1,116 @@
+
+
+
+First is the sheer joy of making things. 
+
+
+
+Second is the pleasure of making things that are useful to other people. 
+
+
+
+Third is the fascination of fashioning complex puzzle-like objects of interlocking moving parts and watching them work in subtle cycles, 
+
+
+
+Fourth is the joy of always learning, 
+
+
+
+Finally, there is the delight of working in such a tractable medium. 
+
+
+
+He builds his castles in the air, from air, creating by exertion of the imagination. 
+
+
+
+The dependence upon others has a particular case that is especially painful for the system programmer. 
+
+
+
+that the product over which one has labored so long appears to be obsolete upon (or before) completion. 
+
+
+
+Good cooking fakes time. If you are made to wait, it is to serve you better, and to please you. MENU OF RESTAURANT ANTOINE. 
+
+
+
+First, our techniques of estimating are poorly developed. More seriously, they reflect an unvoiced assumption which is quite untrue, i.e., that all will go well. Second, our estimating techniques fallaciously confuse effort with progress, hiding the assumption that men and months are interchangeable. 
+
+
+
+Fourth, schedule progress is poorly monitored. 
+
+
+
+All programmers are optimists. 
+
+
+
+divides creative activity into three stages: the idea, the implementation, and the interaction. 
+
+
+
+a child takes nine months, no matter how many women are assigned. 
+
+
+
+The added burden of communication 
+
+
+
+Therefore testing is usually the most mis-scheduled part of programming. 
+
+
+
+Furthermore, delay at this point has unusually severe financial, as well as psychological, repercussions. 
+
+
+
+Reschedule. 
+
+
+
+Trim the task. 
+
+
+
+Adding manpower to a late software project makes it later. 
+
+
+
+In short the $20,000/year programmer may well be 10 times as productive as the $10,000/year one. 
+
+
+
+The converse may be true, too. The data showed no correlation whatsoever 
+
+
+
+between experience and performance. 
+
+
+
+ideal of the small sharp team, which by common consensus shouldn't exceed 10 people. 
+
+
+
+He gives as a simple example a clock, whose architecture consists of the face, the hands, and the winding knob. 
+
+
+
+implementation, however, and its realization, describe what goes on inside the case—powering 
+
+
+
+Good features and ideas that do not integrate with a system's basic concepts are best left out. 
+
+
+
+The worst buildings are those whose budget was too great for the purposes to be served. 
+
+
+
+A quick answer is to refrain from hiring implementers until the specifications are complete. 

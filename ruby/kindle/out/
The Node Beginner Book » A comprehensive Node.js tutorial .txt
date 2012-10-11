@@ -1,0 +1,12 @@
+
+
+
+at best, a JavaScript user, but not a JavaScript developer. 
+
+
+
+JavaScript you intend to run in the backend, it needs to be interpreted and, well, executed. This is what Node.js does, by making use of Google's V8 VM, the same runtime environment for JavaScript that Google Chrome uses. 
+
+
+
+Well, with node, things are a bit different. Because with Node.js, we not only implement our application, we also implement the whole HTTP server. In fact, our web application and its web server are basically the same. 

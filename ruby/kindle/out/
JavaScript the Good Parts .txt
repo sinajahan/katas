@@ -1,0 +1,132 @@
+
+
+
+If we offend, it is with our good will That you should think, we come not to offend, But with good will. To show our simple skill, That is the true beginning of our end. —William Shakespeare, 
+
+
+
+For example: /* var rm_a = /a*/.match(s); */ causes a syntax error. So, it is recommended that/* */comments be avoided and// comments be used 
+
+
+
+JavaScript has a single number type. Internally, it is represented as 64-bit floating point, the same as Java’sdouble. 
+
+
+
+The value NaNis a number value that is the result of an operation that cannot produce a normal result.NaNis not equal to any value, including itself. 
+
+
+
+You can detect NaN with theisNaN(number) function. 
+
+
+
+Strings are immutable. Once it is made, a string can never be changed. 
+
+
+
+When used inside of a function, the var statement defines the function’s private variables. 
+
+
+
+Here are the falsy values: • false • null • undefined • The empty string'' • The number0 • The numberNaN All other values are truthy, includingtrue, the string'false', and all objects. 
+
+
+
+It is usually necessary to test object.hasOwnProperty(variable)to determine whether the property name is truly a member of the object or was found instead on the prototype chain. for (myvar in obj) { if (obj.hasOwnProperty(myvar)) { ... } } 
+
+
+
+The values produced by typeof are 'number', 'string', 'boolean', 'undefined', 'function', and 'object'. If the operand is an array or null, then the result is 'object', which is wrong. 
+
+
+
+not equal !== 
+
+
+
+Objects in JavaScript are mutable keyed collections. In JavaScript, arrays are objects, functions are objects, regular expressions are objects, and, of course, objects are objects. 
+
+
+
+The undefined value is produced if an attempt is made to retrieve a nonexistent member: 
+
+
+
+The|| operator can be used to fill in default values: var middle = stooge["middle-name"] || "(none)"; 
+
+
+
+Attempting to retrieve values fromundefinedwill throw aTypeErrorexception. This can be guarded against with the&& operator: flight.equipment // undefined flight.equipment.model // throw "TypeError" flight.equipment && flight.equipment.model // undefined 
+
+
+
+Objects are passed around by reference. They are never copied: 
+
+
+
+Every object is linked to a prototype object from which it can inherit properties. All objects created from object literals are linked to Object.prototype, an object that comes standard with JavaScript. 
+
+
+
+. The most common filters are thehasOwnPropertymethod and using typeof to exclude functions: 
+
+
+
+p>By reducing your global footprint to a single name, you significantly reduce the chance of bad interactions with other applications, 
+
+
+
+p>A function encloses a set of statements. Functions are the fundamental modular unit of JavaScript. They are used for code reuse, information hiding, and composition. 
+
+
+
+. Objects produced from object literals are linked to Object.prototype. Function objects are linked to Function.prototype (which is itself linked toObject.prototype). Every function is also created with two additional hidden properties: the function’s context and the code that implements the function’s behavior. 
+
+
+
+If a function is not given a name, as shown in the previous example, it is said to be anonymous. 
+
+
+
+The function object created by a function literal contains a link to that outer context. This is called closure. This is the source of enormous expressive power. 
+
+
+
+When a function is not the property of an object, then it is invoked as a function: var sum = add(3, 4); // sum is 7 When a function is invoked with this pattern, thisis bound to the global object. This was a mistake in the design of the language. Had the language been designed correctly, when the inner function is invoked,thiswould still be bound to 
+
+
+
+When a function is stored as a property of an object, we call it a method. 
+
+
+
+increment: function 
+
+
+
+myObject.double = function ( ) { var that = this; // Workaround. var helper = function ( ) { that.value = add(that.value, that.value); }; 
+
+
+
+Functions that are intended to be used with thenewprefix are called constructors.By convention, they are kept in variables with a capitalized name. If a constructor is called without thenewprefix, very bad things can happen without a compile-time or runtime warning, so the capitalization convention is really important. 
+
+
+
+Because JavaScript is a functional object-oriented language, functions can have methods. 
+
+
+
+A function always returns a value. If thereturnvalue is not specified, thenundefined is returned. 
+
+
+
+throw { name: 'TypeError', message: 'add needs numbers' }; 
+
+
+
+Because of the dynamic nature of JavaScript’s prototypal inheritance, all values are immediately endowed with the new methods, even values that were created before the methods were created. 
+
+
+
+Unfortunately, JavaScript does not currently provide tail recursion optimization. Functions that recurse very deeply can fail by exhausting the return stack: 

@@ -1,0 +1,348 @@
+
+
+
+answer is that they paid attention to what they were doing while they were doing it—and 
+
+
+
+“Kaizen” is a Japanese term that captures the concept of continuously making many small improvements. It was considered to be one of the main reasons for the dramatic gains in productivity and quality 
+
+
+
+Before you approach anyone to tell them why something can’t be done, is late, or is broken, stop and listen to yourself. Talk to the rubber duck on your monitor, or the cat. Does your excuse sound reasonable, or stupid? How’s it going to sound to your boss? 
+
+
+
+However, if you’re working on a brand new product, you’ll have different constraints. The marketing people will have promises to keep, the eventual end users may have made plans based on a delivery schedule, and your company 
+
+
+
+certainly have cash-flow constraints. It would be unprofessional to ignore these users’ requirements simply to add new features to the program, or to polish up the code just one more time. We’re not advocating panic: it is equally unprofessional to promise impossible time scales and to cut basic engineering corners to meet a deadline. 
+
+
+
+Great software today is often preferable to perfect software tomorrow. 
+
+
+
+An investment in knowledge always pays the best interest. Benjamin Franklin 
+
+
+
+Learn at least one new language every year. 
+
+
+
+Read a technical book each quarter. 
+
+
+
+Read nontechnical books, too. 
+
+
+
+Take classes. 
+
+
+
+Participate in local user groups. 
+
+
+
+Experiment with different environments. 
+
+
+
+Stay current. 
+
+
+
+Critical Thinking 
+
+
+
+you’ll have a more receptive listener to your ideas on source code repositories. Make what you’re saying relevant in time, as well as in content. Sometimes all it takes is the simple question “Is this a good time to talk about...?” 
+
+
+
+DRY— Don’t Repeat Yourself 
+
+
+
+Impatient duplication. Developers get lazy and duplicate because it seems easier. Interdeveloper duplication. Multiple people on a team (or on different teams) duplicate a piece of information. 
+
+
+
+Imposed duplication. Developers feel they have no choice—the environment seems to require duplication. Inadvertent duplication. Developers don’t realize that they are duplicating information. 
+
+
+
+bad code requires lots of comments. 
+
+
+
+The DRY principle tells us to keep the low-level knowledge in the code, where it belongs, and reserve the comments for other, high-level explanations. 
+
+
+
+The use of accessor functions ties in with Meyer’s Uniform Access principle [Mey97b], which states that “All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation.” 
+
+
+
+If you feel this temptation, remember 
+
+
+
+the hackneyed aphorism “short cuts make for long delays.” You may well save some seconds now, but at the potential loss of hours later. 
+
+
+
+What you’re trying to do is foster an environment where it’s easier to find and reuse existing stuff than to write it yourself. If it isn’t easy, people won’t do it. And if you fail to reuse, you risk duplicating knowledge. 
+
+
+
+Our preference is to start by separating infrastructure from application. Each major infrastructure component (database, communications interface, middleware layer, and so on) gets its own subteam. 
+
+
+
+There is an easy test for orthogonal design. Once you have your components 
+
+
+
+aspect 
+
+
+
+Normally, you can simply hide a third-party product behind a welldefined, abstract interface. 
+
+
+
+Remember that there are many users of an application. There’s the end user, who understands the business rules and the required outputs. There are also secondary users: operations staff, configuration and test managers, support and maintenance programmers, and future generations of developers. Each of 
+
+
+
+these users has their own problem domain, and you can generate mini-environments and languages for all of them. 
+
+
+
+Iterate the Schedule with the Code 
+
+
+
+What to Say When Asked for an Estimate You say “I’ll get back to you.” 
+
+
+
+Challenges Start keeping a log of your estimates. For each, track how accurate you turned out to be. If your error was greater than 50%, try to find out where your estimate went wrong. 
+
+
+
+Many new programmers make the mistake of adopting a single power tool, such as a particular integrated development environment (IDE), and never leave its cozy interface. 
+
+
+
+Many new programmers make the mistake of adopting a single power tool, such as a particular integrated development environment (IDE), and never leave its cozy interface. This really is a mistake. We need to be comfortable beyond the limits imposed by an IDE. The only way to do this is to keep the basic tool set sharp and ready to use. 
+
+
+
+All software becomes legacy as soon as it’s 
+
+
+
+After all, can’t you do everything equally well by pointing and clicking? The simple answer is “no.” 
+
+
+
+Fix the Problem, Not the Blame It doesn’t really matter whether the bug is your fault or someone else’s. It is still your problem. 
+
+
+
+You Can’t Write Perfect Software 
+
+
+
+We use assertions to detect bad data. 
+
+
+
+When everybody actually is out to get you, paranoia is just good thinking. Woody Allen 
+
+
+
+For Java, there is iContract [URL 17]. It takes comments (in JavaDoc form) and generates a new source file with the assertion logic included. 
+
+- Your Note Location 2146 | Added on Saturday, February 04, 2012, 03:48 PM
+
+let the caller chech before the call
+
+
+
+DBC and Crashing Early 
+
+- Your Note Location 2264 | Added on Saturday, February 04, 2012, 03:50 PM
+
+how exceptions work?
+
+
+
+If not caught, this will percolate up to the top level of the 
+
+
+
+If It Can’t Happen, Use Assertions to Ensure That It Won’t 
+
+
+
+exceptions should be reserved for unexpected events. 
+
+
+
+fences make good neighbors. Robert Frost, “Mending Wall” 
+
+
+
+We’d like to follow this same model in software. When we ask an object for a particular service, we’d like the service to be performed on our behalf. We do not want the object to give us a third-party object that we have to deal with to get the required service. 
+
+
+
+Configure, Don’t Integrate Use metadata to describe configuration options for an application: tuning parameters, user preferences, the installation directory, and so on. 
+
+
+
+Programming by 
+
+
+
+Coincidence 
+
+
+
+then document your assumption well. 
+
+
+
+Don’t code blindfolded. Attempting to build an application you don’t fully understand, or to use a technology you aren’t familiar with, is an invitation to be misled by coincidences. 
+
+
+
+Document your assumptions. Design by Contract, page 109, can help clarify your assumptions in your own mind, as well as help communicate them to others. 
+
+
+
+Don’t just test your code, but test your assumptions as well. Don’t guess; actually try it. Write an assertion to test your assumptions (see Assertive Programming, page 122). If your assertion is right, you have improved the documentation in your code. If you discover your assumption is wrong, then count yourself lucky. 
+
+
+
+Don’t be a slave to history. Don’t let existing code dictate future code. All code can be replaced if it is no longer appropriate. Even within one program, don’t let what you’ve already done constrain what you do next—be ready to refactor (see Refactoring, page 184). This decision may impact the project schedule. The assumption is that the impact will be less than the cost of not making the change.1 
+
+
+
+Also be wary of premature optimization. It’s always a good idea to make sure an algorithm really is a bottleneck before investing your precious time trying to 
+
+
+
+When Should You Refactor? When you come across a stumbling block because the code doesn’t quite fit anymore, or you notice two things that should really be merged, or anything else at all strikes you as being “wrong,” don’t hesitate to Licensed by change it. There’s no time like the present. 
+
+
+
+TIP 47 Refactor Early, Refactor Often 
+
+
+
+1. Don’t try to refactor and add functionality at the same time. 2. Make sure you have good tests before you begin refactoring. Run the tests as often as possible. That way you will know quickly if your changes have broken anything. 
+
+
+
+3. Take short, deliberate steps: move a field from one class to another, fuse two similar methods into a superclass. Refactoring often involves making many localized changes that result in a larger-scale change. If you keep your steps small, and test after each step, you will avoid prolonged debugging. 
+
+
+
+but Mr. Fowler’s point of maintaining good regression tests is 
+
+
+
+the key to refactoring with confidence. 
+
+
+
+So next time you see a piece of code that isn’t quite as it should be, fix both it and everything that depends on it. Manage the pain: if it hurts now, but is going to hurt even more later, you might as well get it over 
+
+
+
+Testing Against Contract 
+
+
+
+TIP 50 Don’t Use Wizard Code You Don’t Understand 
+
+
+
+regardless of which “best practices” it includes, no method can replace thinking. 
+
+
+
+Perfection is achieved, not when there is nothing left to add, but when there is nothing left to take away. . . . 
+
+
+
+become a user. 
+
+
+
+Abstractions Live Longer than Details 
+
+
+
+Many projects failures are blamed on an increase in scope—also known as feature bloat, 
+
+
+
+Unfortunately, not many projects seem to track requirements actively. This means that they have no way to report on changes of scope— who requested a feature, who approved it, total number of requests approved, and so on. 
+
+
+
+Maintain a Glossary 
+
+
+
+So you pull on the ring, or try to put the T’s in the box, and quickly discover that the obvious solutions just don’t work. The puzzle can’t be solved that way. But even though it’s obvious, that doesn’t stop people from trying the same thing—over and over—thinking there must be a way. Of course, there isn’t. The solution lies elsewhere. The secret to solving the puzzle is to identify the real (not imagined) constraints, and find a solution therein. Some constraints are absolute; others are merely preconceived 
+
+
+
+But this phrase isn’t entirely accurate. If the “box” is the boundary of constraints and conditions, then the trick is to find the box, which may be considerably larger than you think. 
+
+
+
+It’s not whether you think inside the box or outside the box. The problem lies in finding the box—identifying the real constraints. 
+
+
+
+Don’t Think Outside the Box— Findthe Box 
+
+
+
+Categorize and prioritize your constraints. When woodworkers begin a project, they cut the longest pieces first, then cut the smaller pieces out of the remaining wood. In the same manner, we want to identify the most restrictive constraints first, and fit the remaining constraints within them. 
+
+
+
+You are a great performer. You too need to listen to the voice that whisLicensed by pers “wait.” If you sit down to start typing and there’s some nagging doubt in your mind, heed it. TIPChristopher Miller Listen to Nagging Doubts—Start When You’re Ready 
+
+
+
+technique that has worked for us in these circumstances is to start prototyping. Choose an area that you feel will be difficult and begin producing some kind of proof of concept. 
+
+
+
+The Specification Trap The Landing Pilot is the Non-Handling Pilot until the ‘decision altitude’ call, when the Handling Non-Landing Pilot hands the handling to the Non-Handling Landing Pilot, unless the latter calls ‘go-around,’ in which 
+
+
+
+Here’s a challenge for you. Write a short description that tells someone how to tie bows in their shoelaces. Go on, try it! 
+
+
+
+Never underestimate the cost of adopting new tools and methods. Be prepared to treat the first projects using these techniques as a learning experience. 
+
+
+
+No Broken Windows Quality is a team issue. 

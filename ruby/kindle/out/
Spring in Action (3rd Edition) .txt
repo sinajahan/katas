@@ -1,0 +1,948 @@
+
+
+
+By the time the EJB 3 specification had entered the scene, other POJO-based development frameworks had already established themselves as de facto standards in the Java community. 
+
+
+
+r implementations that can be categorized into two distinct types. Bean factories (defined by the org.springframework.beans.factory.BeanFactory interface) 
+
+
+
+. Application contexts (defined by the org.springframework.context.ApplicationContext interface) 
+
+
+
+> ClassPathXmlApplicationContext—Loads 
+
+
+
+> FileSystemXmlApplicationContext—Loads 
+
+
+
+> XmlWebApplicationContext—Loads 
+
+
+
+more detail: 1 Spring instantiates the bean. 2 Spring injects values and bean references into the bean’s properties. 3 If the bean implements BeanNameAware, Spring passes the bean’s ID to thesetBeanName() method. 4 If the bean implements BeanFactoryAware, Spring calls the setBeanFactory() method, passing in the bean factory itself. 5 If the bean implements ApplicationContextAware, Spring will call the setApplicationContext() method, passing in a reference to the enclosing application context. 6 If any of the beans implement the BeanPostProcessor interface, Spring calls their postProcessBeforeInitialization() method. 7 If any beans implement the InitializingBean interface, Spring calls their afterPropertiesSet() method. Similarly, if the bean was declared with an init-method, then the specified initialization method will be called. 8 If there are any beans that implement BeanPostProcessor, Spring will call their postProcessAfterInitialization() method. 9 At this point, the bean is ready to be used by the application and will remain in the application context until the application context is destroyed. 10 If any beans implement the DisposableBean interface, then Spring will call their destroy() methods. Likewise, if any bean was declared with a destroymethod, then the specified method will be called. 
+
+
+
+you can leverage Spring’s robust, POJO-oriented development model to do it using Spring Batch. 
+
+
+
+Let’s see how to wire in beans that are created through factory methods. 
+
+
+
+factory-method="getInstance" /> 
+
+- Your Note Location 984 | Added on Sunday, June 3, 2012 3:32:43 PM
+
+look on mondy
+
+- Your Note Location 984 | Added on Sunday, June 3, 2012 3:34:23 PM
+
+look on mondy
+
+- Your Bookmark Location 981 | Added on Sunday, June 3, 2012 3:34:46 PM
+
+
+
+
+
+By default, all Spring beans are singletons. When the container dispenses a bean (either through wiring or as the result of a call to the container’sgetBean() method) it’ll always hand out the exact same instance of the bean. 
+
+
+
+each time one is needed, you should declare the bean’s scope attribute to beprototype. 
+
+
+
+singleton Scopes the bean definition to a single instance per Spring container (default). prototype Allows a bean to be instantiated any number of times (once per use). request Scopes a bean definition to an HTTP request. Only valid when used with a web-capable Spring context (such as with Spring MVC). session Scopes a bean definition to an HTTP session. 
+
+
+
+To define setup and teardown for a bean, simply declare the <bean> with initmethod and/or destroy-method parameters. 
+
+
+
+bean is defined by declaring a <bean> element directly as a child of the <property> element to which it’ll be injected. 
+
+
+
+Note that the inner beans don’t have an id attribute set. 
+
+
+
+the main drawback of using inner beans: they can’t be reused. 
+
+
+
+Nevertheless, Spring’s p namespace offers a way to wire bean properties that doesn’t require so many 
+
+
+
+p:song = "Jingle Bells" p:instrument-ref = "saxophone" 
+
+
+
+<list> Wiring a list of values, allowing duplicates <set> Wiring a set of values, ensuring no duplicates <map> Wiring a collection of name-value pairs where name and value can be of any type <props> Wiring a collection of name-value pairs where the name and value are both Strings 
+
+
+
+<property name="instruments"> <list> <ref bean="guitar" /> <ref bean="cymbal" /> <ref bean="harmonica" /> </list> </property> 
+
+
+
+<property name="instruments"> <map> <entry key="GUITAR" value-ref="guitar" /> <entry key="CYMBAL" value-ref="cymbal" /> <entry key="HARMONICA" value-ref="harmonica" /> </map> </property> 
+
+
+
+<prop key="GUITAR">STRUM STRUM STRUM</prop> <prop key="CYMBAL">CRASH CRASH CRASH</prop> <prop key="HARMONICA">HUM HUM HUM</prop> </props> </property> 
+
+
+
+To set a property to null, you simply use the <null/> element. For example: <property name="someNonNullProperty"><null/></property> 
+
+
+
+name="capacity" value="#{1e4}"/> 
+
+
+
+<property name="song" value="#{songSelector.selectSong().toUpperCase()}"/> 
+
+
+
+But the real value of theT() operator is that it gives us access to static methods and constants on a given class. 
+
+
+
+<property name="homePath" value="#{systemEnvironment['HOME']}"/> 
+
+
+
+autowiring:  byName—Attempts to match all properties of the autowired bean with beans that have the same name (or ID) as the properties. 
+
+
+
+byType—Attempts to match all properties of the autowired bean with beans whose types are assignable 
+
+
+
+constructor—Tries to match up a constructor of the autowired bean with beans whose types are assignable to the constructor arguments. 
+
+
+
+autodetect—Attempts to apply constructor autowiring first. 
+
+
+
+<bean id="kenny" class="com.springinaction.springidol.Instrumentalist" autowire="byName"> 
+
+
+
+In this new declaration of duke, the <constructor-arg> elements are gone and the autowire attribute has been set toconstructor. This tells Spring to look atPoeticJuggler’s constructors and try to find beans in the Spring configuration to satisfy the arguments of one of the constructors. 
+
+
+
+autowire="autodetect" /> When a bean has been configured to autowire by autodetect, Spring will attempt to autowire by constructor first. If a suitable constructor-to-bean match can’t be found, then Spring will attempt to autowire by type. 
+
+
+
+<context:annotation-config> tells Spring that you intend to use annotation-based wiring in Spring. 
+
+
+
+What’s especially interesting about @Autowired is that you don’t have to use it with a setter method. You can use it on any method to automatically wire in bean references: @Autowired public void heresYourInstrument(Instrument instrument) { this.instrument = instrument; } 
+
+
+
+@Autowired’srequired attribute to false. For example: @Autowired(required=false) private Instrument instrument; 
+
+
+
+To help @Autowired figure out which bean you want, you can accompany it with Spring’s@Qualifier annotation. 
+
+
+
+But it does create a Spring-specific dependency within the classes that use it (even if that dependency is just an annotation). 
+
+
+
+Fortunately, Spring also supports a standard Java alternative to @Autowired. Let’s look at how to use@Inject from the Dependency Injection for Java specification. 
+
+
+
+The centerpiece of JSR-330 is the @Inject annotation. This annotation is an almost complete drop-in replacement for Spring’s @Autowired annotation. 
+
+
+
+@Inject’s answer to the @Qualifier annotation is the @Named annotation. 
+
+
+
+let’s use SpEL to pull a value from a system property: @Value("#{systemProperties.myFavoriteSong}") private String song; 
+
+
+
+To configure Spring for autodiscovery, use <context:component-scan> instead of 
+
+
+
+@Component—A general-purpose stereotype annotation indicating that the class is a Spring component 
+
+
+
+@Controller—Indicates 
+
+
+
+@Repository—Indicates 
+
+
+
+@Service—Indicates 
+
+
+
+you may want to try out Spring’s Java-based configuration because, as you’ll soon see, the Java-based configuration knows a few tricks that its XML counterpart doesn’t. 
+
+
+
+@Bean public Performer duke() { return new Juggler(); 
+
+
+
+@Configuration public class SpringIdolConfig { 
+
+
+
+terms of compile-time checking to ensure that your bean’s type is a real type and that its ID is unique. 
+
+
+
+aspects help to modularize cross-cutting concerns. 
+
+
+
+Advice defines both the what and the when of an aspect. 
+
+
+
+Before—The advice functionality takes place before the advised method is invoked.  After—The advice functionality takes place after the advised method completes, regardless of the outcome.  After-returning—The advice functionality takes place after the advised method successfully 
+
+
+
+After-throwing—The advice functionality takes place after the advised method throws an exception.  Around—The advice wraps the advised method, providing some functionality before and after the advised method is invoked. 
+
+
+
+join point is a point in the execution of the application where an aspect can be plugged in. 
+
+
+
+The weaving can take place at several points in the target object’s lifetime:  Compile time—Aspects 
+
+
+
+This requires a special compiler. AspectJ’s weaving compiler weaves aspects this way. 
+
+
+
+Classload time—Aspects are woven in when the target class is loaded into the JVM. This requires a special ClassLoader that enhances that target class’s bytecode before the class is introduced into the application. AspectJ 5’s 
+
+
+
+Runtime—Aspects are woven in sometime during the execution of the application. Typically, an AOP container will dynamically generate a proxy object that will delegate to the target object while weaving in the aspects. 
+
+
+
+leaving us with three dominant AOP frameworks:  AspectJ (http://eclipse.org/aspectj)  JBoss AOP (http://www.jboss.org/jbossaop)  Spring AOP 
+
+
+
+Although AspectJ now supports annotation-based aspects, AspectJ also comes as a language extension to Java. 
+
+
+
+some other AOP frameworks, such as AspectJ and JBoss, which provide field and constructor join points in addition to method pointcuts. 
+
+
+
+In Spring AOP, pointcuts are defined using AspectJ’s pointcut expression language. 
+
+
+
+<aop:advisor> Defines an AOP advisor. <aop:after> Defines an AOP after advice (regardless of whether the advised method returns successfully). <aop:after-returning> Defines an AOP after-returning advice. <aop:after-throwing> Defines an AOP after-throwing advice. <aop:around> Defines an AOP 
+
+
+
+public void watchPerformance(ProceedingJoinPoint joinpoint) { try { System.out.println("The audience is taking their seats."); System.out.println("The audience is turning off their cellphones"); long start = System.currentTimeMillis(); joinpoint.proceed(); 
+
+
+
+As its name implies, <aop:declare-parents> declares that the beans it advises will have new parents in its object hierarchy. 
+
+
+
+@Aspect 
+
+
+
+public class Audience 
+
+
+
+@Pointcut( "execution(* 
+
+
+
+@Before("performance()") Before public void takeSeats() 
+
+
+
+Therefore, the name of this pointcut is performance(). The actual body of the performance() method is irrelevant and in fact should be empty. The method itself is just a marker, giving the @Pointcut annotation something to attach itself to. 
+
+
+
+invocations. If you want to be able to exploit the full power of AspectJ, you’ll have to use the AspectJ runtime and not rely on Spring 
+
+
+
+Although Spring AOP is sufficient for many applications of aspects, it’s a weak AOP solution when contrasted with AspectJ. 
+
+
+
+Figure 4.8 Aspects need injection, too. Spring can inject AspectJ aspects with dependencies just as if they were another bean. 
+
+
+
+In fact, you could create mock implementations of these data access interfaces. That would allow you to test your service object without ever having to connect to the database, 
+
+
+
+I believe that interfaces are key to writing loosely coupled code and that 
+
+
+
+I believe that interfaces are key to writing loosely coupled code and that they should be used at all layers of an application, not just at the data access layer. 
+
+
+
+That said, it’s also important to note that though Spring encourages the use of interfaces, Spring doesn’t require them—you’re welcome to use Spring to wire a bean (DAO or otherwise) directly into a property of another bean without an interface 
+
+
+
+you can’t do anything with JDBC without being forced to catch SQLException. SQLException means that something went wrong while trying to access a database. But there’s little about that exception that tells you what went wrong or how to deal with it. 
+
+
+
+If there’s nothing that can be done to recover from an SQLException, why are we forced to catch it? 
+
+
+
+If Hibernate-specific exceptions are being thrown, then the fact that we’re dealing with Hibernate will leak into the rest of the application. 
+
+
+
+those exceptions are rooted with DataAccessException. What makes DataAccessException special is that it’s an unchecked exception. 
+
+
+
+Spring takes the stance that many exceptions are the result of problems that can’t be addressed in a catch block. 
+
+
+
+You’re only involved when you need to be; the rest is taken care of. This mirrors a powerful design pattern: the Template Method 
+
+
+
+two distinct classes: templates and callbacks. Templates manage the fixed part of the process, whereas your custom data access code is handled in the callbacks. 
+
+
+
+For production-ready applications, I recommend using a data source that draws its connections from a connection pool. 
+
+
+
+The benefit of configuring data sources in this way is that they can be managed completely external to the application, allowing the application to ask for a data source when it’s ready to access the database. Moreover, data sources managed in an application server are often pooled for greater performance and can be hot-swapped by system administrators. 
+
+
+
+If you're unable to retrieve a data source from JNDI, the next best thing is to configure a pooled data source directly in Spring. Although Spring doesn’t provide a pooled data source, there’s a suitable one available in the Jakarta Commons Database Connection Pooling 
+
+
+
+<property name="initialSize" value="5" /> <property name="maxActive" value="10" /> 
+
+
+
+maxWait How long the pool will wait for a connection to be returned to the pool (when there are no available connections) before an exception is thrown. If -1, wait indefinitely. 
+
+
+
+you should seriously consider the implications of using either in a production application. Because 
+
+
+
+JdbcTemplate—The most basic 
+
+
+
+NamedParameterJdbcTemplate—This JDBC template class enables you to perform queries 
+
+
+
+SimpleJdbcTemplate—This version of the JDBC template takes advantage of Java 5 features such as autoboxing, generics, and variable parameter lists to simplify how a JDBC template is used. 
+
+
+
+we’ll focus solely on SimpleJdbcTemplate in this chapter. 
+
+
+
+three such classes—Jdbc DaoSupport, SimpleJdbcDaoSupport, and NamedPa rameterJdbcDaoSupport—one to mirror each of Spring’s JDBC templates. 
+
+
+
+The standard way to get a reference to a Hibernate Session object is through an implementation of Hibernate’s SessionFactory interface. 
+
+
+
+applications use an implementation of EntityManagerFactory to get an instance of an EntityManager. The JPA specification defines two kinds of entity managers:  Application-managed—Entity 
+
+
+
+Container-managed—Entity managers are created and managed by a Java EE container. 
+
+
+
+all-or-nothing operations are called transactions. 
+
+
+
+For a more detailed explanation of transactions, I suggest that you read Martin Fowler’s Patterns of Enterprise Application Architecture (Addison-Wesley Professional, 2002). Specifically, chapter 5 discusses concurrency and transactions. 
+
+
+
+support offered by the persistence mechanism. This includes JDBC, Hibernate, and the Java Persistence API (JPA). But if your application has transaction requirements that span multiple resources, Spring can support distributed (XA) transactions using a thirdparty JTA implementation. 
+
+
+
+transaction managers meet your needs or if your transactions span multiple transaction sources (for example, two or more different databases), you’ll need to use JtaTransactionManager: 
+
+
+
+One approach to adding transactions is to programmatically add transactional boundaries directly within the saveSpittle() method using Spring’sTransactionTemplate. 
+
+
+
+PROPAGATION BEHAVIOR The first facet of a transaction is propagation behavior. Propagation behavior defines the boundaries of the transaction with respect to the client and to the method being called. Spring defines seven distinct propagation behaviors, 
+
+
+
+PROPAGATION_MANDATORY 
+
+
+
+PROPAGATION_NESTED 
+
+
+
+PROPAGATION_NEVER 
+
+
+
+PROPAGATION_NOT_SUPPORTED 
+
+
+
+PROPAGATION_REQUIRES_NEW 
+
+
+
+PROPAGATION_SUPPORTS 
+
+
+
+ISOLATION LEVELS The second dimension of a declared transaction is the isolation level. 
+
+
+
+ISOLATION_READ_UNCOMMITTED 
+
+
+
+ISOLATION_READ_COMMITTED 
+
+
+
+ISOLATION_REPEATABLE_READ 
+
+
+
+ISOLATION_SERIALIZABLE 
+
+
+
+READ-ONLY The third characteristic of a declared transaction is whether it’s a read-only transaction. 
+
+
+
+you can declare a transaction to automatically roll back after a certain number of seconds. 
+
+
+
+<tx:advice>, 
+
+
+
+<tx:attributes> 
+
+
+
+<tx:method> 
+
+
+
+rollback-for 
+
+
+
+<tx:annotation-driven 
+
+
+
+<tx:annotation-driven transaction-manager="txManager" /> 
+
+
+
+@Transactional(propagation=Propagation.SUPPORTS, readOnly=true) 
+
+
+
+A front controller is a common web application pattern where a single servlet delegates responsibility for a request to other components of an application to perform actual processing. 
+
+
+
+A front controller is a common web application pattern where a single servlet delegates responsibility for a request to other components of an application to perform actual processing. In the case of Spring MVC, DispatcherServlet is the front controller. The DispatcherServlet’s job is to send the request on to a Spring MVC controller. 
+
+
+
+(Actually, a well-designed controller performs little or no processing itself and instead delegates responsibility for the business logic to one or more service objects.) 
+
+
+
+The DispatcherServlet will consult a view resolver to map the logical view name to a specific view implementation, which may or may not be a JSP. 
+
+
+
+<servlet-mapping> <servlet-name>spitter</servlet-name> <url-pattern>/</url-pattern> </servlet-mapping> 
+
+
+
+<mvc:resources mapping="/resources/**" location="/resources/" /> 
+
+
+
+ControllerBeanNameHandlerMapping—Similar 
+
+
+
+DefaultAnnotationHandlerMapping—Maps 
+
+
+
+@RequestMapping. 
+
+
+
+<mvc:annotation-driven/> 
+
+
+
+First, the @Controller annotation indicates that this class is a controller class. 
+
+
+
+First, the @Controller annotation indicates that this class is a controller class. This annotation is a specialization of the @Component annotation, which means that <context: component-scan> will pick up and register @Controller-annotated classes as beans, 
+
+
+
+org.mockito.Mockito.*; 
+
+
+
+The only thing that HomeController needs to do its job is an instance of SpitterService, which Mockito2 graciously provides as a mock implementation. 
+
+
+
+View resolver Description BeanNameViewResolver 
+
+
+
+A lot of Spring MVC embraces a convention-over-configuration approach to development. InternalResourceViewResolver is one such convention-oriented element. It resolves a logical view name into a View object that delegates 
+
+
+
+Apache Tiles3 is a templating framework for laying out pieces of a page as fragments that are assembled into a full page at runtime. 
+
+
+
+Since the Spittles were placed into the model with the key spittles, the list is referenced in the JSP using${spittles}. 
+
+
+
+${spittles} in home.jsp refers to a servlet request attribute named spittles. 
+
+
+
+p>@RequestParam("spitter") String 
+
+
+
+@RequestParam is useful for binding query parameters to method parameters where the names don’t match. 
+
+
+
+createSpitterProfile(Model model) { model.addAttribute(new 
+
+
+
+You may have also noticed that the Spitter parameter is annotated with@Valid. This indicates that theSpitter should pass validation before being passed in. 
+
+
+
+@PathVariable. 
+
+
+
+@Size(min=3, max=20, message= "Username must be between 3 and 20 characters long.") @Pattern(regexp="^[a-zA-Z0-9]+$",Enforce size message="Username must be alphanumeric with no spaces") private String username;Ensure 
+
+
+
+<sf:errors> 
+
+
+
+Saving a file to the local file system like this works great, but leaves the management of the file system up to you. You’ll be responsible for ensuring that there’s plenty of space. It’ll be up to you to make sure that it’s backed up in case of a hardware failure. And it’s your job to deal with synchronizing the image files across multiple servers in a cluster. 
+
+
+
+JetS3t is an open source library for saving and reading files in the S3 cloud. 
+
+
+
+Spring Web Flow is an extension to Spring MVC that enables development of flowbased web applications. 
+
+
+
+Acegi was a powerful security framework, but it had one big turn-off: it required a 
+
+
+
+ACL Provides support for domain object security through access control lists (ACLs) 
+
+
+
+LDAP Provides support for authentication using the Lightweight Directory Access Protocol (LDAP) 
+
+
+
+DelegatingFilterProxy proxies filter handling to a delegate filter bean in the Spring application context. 
+
+
+
+Spring Security employs several servlet filters to provide various aspects of security. 
+
+
+
+<http auto-config="true"> <intercept-url pattern="/**" access="ROLE_SPITTER" /> </http> 
+
+
+
+One of the benefits of setting auto-config totrue is that Spring Security will automatically generate a login page for you. Here’s the HTML for that form. 
+
+
+
+hasAnyRole(list of roles) true if the user has been granted any of the roles specified hasRole(role) true if the user has been granted the specified role hasIpAddress(IP Address) The user’s IP address (only available in web security) isAnonymous() true if the current user is an anonymous user isAuthenticated() true if the current user is not anonymous isFullyAuthenticated() true if the current user is neither an anonymous nor a rememberme user isRememberMe() true if the current user was automatically authenticated via remember-me permitAll Always evaluates totrue principal The user’s principal object 
+
+
+
+<intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN') and hasIpAddress('192.168.1.2')"/> 
+
+
+
+requires-channel="https"/> 
+
+
+
+JSP tag What it does <security:accesscontrollist> Allows the body of the tag to be rendered if the currently authenticated user has one of the stipulated permissions in the specified domain object <security:authentication> Accesses properties of the current user’s authentication object <security:authorize> Allows the body of the tag to be rendered if a specified security 
+
+
+
+Spring Security’s <security:authorize> JSP tag conditionally renders a portion of the view depending on the user’s granted authorities. 
+
+
+
+authenticating users against  In-memory (Spring-configured) user repositories  JDBC-based user repositories  LDAP-based user repositories  OpenID decentralized user identity systems  Central Authentication System (CAS)  X.509 certificates  JAAS-based providers 
+
+
+
+users-by-username-query Queries for a user’s username, password, and enabled status given the username authorities-by-username-query Queries for a user’s granted authorities given the username group-authorities-by-username-query Queries for a user’s group authorities given the username 
+
+
+
+As useful as relational databases can be, they don’t do well representing hierarchical data. LDAP directories, on the other hand, excel at storing information hierarchically. For that reason, it’s common to find a company’s organizational structure represented in an LDAP directory. 
+
+
+
+<ldapauthentication-provider> 
+
+
+
+Here, we’ve turned on remember-me functionality along with a bit of special configuration. If you use the <remember-me> element with no attributes, 
+
+
+
+<remember-me key="spitterKey" token-validity-seconds="2419200" /> </http> 
+
+
+
+The token that’s stored in the cookie is made up of the username, password, an expiration date, and a private key—all encoded in an MD5 hash before being written to the cookie. 
+
+
+
+This is just one of four ways that Spring Security supports method-level security:  Methods annotated with@Secured  Methods annotated with JSR-250’s@RolesAllowed  Methods annotated with Spring’s pre- and post-invocation annotations  Methods matching one or more explicitly declared pointcuts 
+
+
+
+POST-FILTERING METHODS Sometimes it’s not the method that’s being secured, but rather the data being returned from that method. For example, suppose that you wanted to present a list of Spittles to the user, but limit that list to only thoseSpittles that the user is allowed to delete. 
+
+
+
+Before RMI, the only remoting options available to Java programmers were CORBA (which at the time required the purchase of a third-party Object Request Broker, or ORB) or handwritten socket programming. 
+
+
+
+Write the service implementation class with methods that throw java.rmi .RemoteException. 2 Create the service interface to extend java.rmi.Remote. 3 Run the RMI compiler (rmic) to produce client stub and server skeleton classes. 4 Start an RMI registry to host the services. 5 Register the service in the RMI registry. 
+
+
+
+has difficulty working across firewalls. That’s because RMI uses arbitrary ports for communication—something that firewalls typically won’t allow. In an intranet environment, this usually isn’t a concern. But if you’re working on the “evil internet,” you’ll probably run into trouble with RMI. 
+
+
+
+Another thing to consider is that RMI is Java-based. That means that both the client and the service must be written in Java. And since RMI uses Java serialization, the types of the objects being sent across the network must have the exact same version on both sides of the call. 
+
+
+
+A class that’s annotated with @WebService is considered a web service endpoint and its methods, annotated with @WebMethod, are the operations. 
+
+
+
+Although we’re usingSpringBeanAutowiringSupport to enable autowiring for JAX-WS endpoints, it’s useful to enable autowiring support anywhere an object’s lifecycle is managed outside of Spring. The only requirement is that the Spring application context and the non-Spring runtime reside in the same web application. 
+
+
+
+Whereas RPC is service-oriented and focused on actions and verbs, REST is resource-oriented, emphasizing the things and nouns that describe an application. 
+
+
+
+RestTemplate simplifies client-side consumption of REST resources. 
+
+
+
+Nothing is terribly wrong with how DisplaySpittleController is written. But it isn’t a RESTful controller. It’s action-oriented and focused on a specific use case: 
+
+
+
+Many URLs don’t locate or identify anything—they make demands. Rather than identify a thing, they insist that some action be taken. 
+
+
+
+In fact, the new URL has no query parameters at all. Although query parameters are still a legitimate way to send information to the server, they’re intended to provide guidance to the server in producing the resource. They shouldn’t be used to help identify a resource. 
+
+
+
+Each of the HTTP methods is characterized by two traits: safety and idempotency. A method is considered safe if it doesn’t change the state of the resource. 
+
+
+
+Idempotent methods may or may not change state, but repeated requests should have no further side effects after the first request. By definition, all safe methods are also idempotent, but not all idempotent methods are safe. 
+
+
+
+POST Posts data to the server to be handled by a processor No No listening at the request’s URL. PUT Puts resource data to the server, at the URL of the No Yes request. DELETE Deletes the resource on the server identified by the No Yes request’s URL. 
+
+
+
+In other words, a GET-handling method should only return a resource—it shouldn’t update or delete a resource. 
+
+
+
+PUT When it comes to understanding the PUT method’s purpose, it helps to know that it’s the semantic opposite of GET. 
+
+
+
+Whereas a GET request transfers the state of a resource from the server to the client, PUT transfers the resource state from the client to the server. 
+
+
+
+Once again, this method is annotated with @ResponseStatus to set the HTTP status code in the request. This time, the status will be set to 201 (Created) to indicate that a resource was successfully created. 
+
+
+
+ContentNegotiatingViewResolver is a special view resolver that takes the content type that the client wants into consideration. 
+
+
+
+But if that handler method is annotated with @ResponseBody, then it indicates that the HTTP message converter mechanism should take over and transform the returned object into whatever form the client needs. 
+
+
+
+RestTemplate 
+
+
+
+With the exception of TRACE, RestTemplate covers all of the HTTP verbs. 
+
+
+
+But HTML 4 only officially supports GET and POST in forms, leavingPUT, DELETE, and all other HTTP methods in the cold. 
+
+
+
+In JMS, there are two types of destination: queues and topics. Each of these is associated with a specific messaging model, either point-to-point (for queues) or publishsubscribe (for topics). 
+
+
+
+Active MQ is a great open source message broker and a wonderful option for asynchronous messaging with JMS. 
+
+
+
+<bean id="connectionFactory" class="org.apache.activemq.spring.ActiveMQConnectionFactory"> <property name="brokerURL" value="tcp://localhost:61616"/> </bean> 
+
+
+
+JmsTemplate. 
+
+
+
+jmsTemplate.send( new MessageCreator() 
+
+
+
+jmsTemplate.receive(); 
+
+
+
+In keeping with Spring’s philosophy of avoiding checked exceptions, 
+
+
+
+JmsTemplate is that thereceive() method is synchronous. 
+
+
+
+One of the highlights of the EJB 2 specification was the inclusion of the messagedriven bean (MDB). MDBs are EJBs that process messages asynchronously. In other words, MDBs react to messages in a JMS destination as events and respond to those events. 
+
+
+
+If we were to build our spittle alert handler using EJB’s message-driven model, it’d need to be annotated with@MessageDriven. 
+
+
+
+<jms:listener-container connection-factory="connectionFactory"> <jms:listener destination="spitter.alert.queue" 
+
+
+
+we’re going to bring those two concepts together and see how to make remote calls that use JMS as a transport. 
+
+
+
+An MBean is a JavaBean that exposes certain methods which define the management interface. 
+
+
+
+<bean id="mbeanExporter" class="org.springframework.jmx.export.MBeanExporter"> <property name="beans"> <map> <entry key="spitter:name=HomeController" value-ref="homeController"/> </map> 
+
+
+
+override bean property values with values from an external properties file. 
+
+
+
+Although that wasn’t terribly complex, Spring 2.5 made it even easier with a new <context:property-placeholder> element in the context configuration namespace. 
+
+
+
+jdbc.url=jdbc:${jdbc.protocol}://${db.server}/${db.name}/${db.name} 
+
+
+
+Now, if any of the placeholder variables can’t be found in the db.properties file, then the default values in the defaultConfiguration bean will be used. 
+
+
+
+Encrypting external properties The Jasypt project is a wonderful library that simplifies encryption in Java. 
+
+
+
+EnvironmentStringPBEConfig will let us configure encryption details, such as the encryption password, in environment variables. 
+
+
+
+environment variable just as easily as they can read a Spring configuration file? The answer to that question is, yes. But the idea here is that the environment variable would be set by a system administrator just before the application is started and then unset once the application is underway. By then the data source properties will have been set and the environment variable will no longer be needed. 
+
+
+
+JNDI is typically used in Java EE applications to store and retrieve JDBC data sources and JTA transaction managers. 
+
+
+
+Setting the cache attribute to false tells <jee:jndi-lookup> to always fetch the object from JNDI. 
+
+
+
+Spring comes with an email abstraction API that makes simple work of sending emails. 
+
+
+
+<task:annotation-driven/> The <task:annotation-driven/> element sets Spring up to automatically support scheduled and asynchronous methods. 
+
+
+
+Scheduled jobs  Asynchronous methods 
+
+
+
+@Scheduled(fixedRate=86400000) 
+
+
+
+@Scheduled(cron="000** SAT") 
+
+
+
+Perceived performance is exactly what it sounds like. Who cares how long it takes to do something, as long as the user sees something happening immediately? 
+
+
+
+method to be handled asynchronously, then the application could be presenting a new page to the user while the persistence logic is handled in the background. That’s what the @Async annotation is for. 
+
+
+
+@Async public Future<Long> performSomeReallyHairyMath(long input) { // ... return new AsyncResult<Long>(result); } 
+
+
+
+Until then, the caller can check in on the status of the result by callingisDone() and isCancelled(). 
+
+
+
+areas of Spring such as Spring Integration, Spring Batch, Spring Dynamic Modules, and (my personal favorite) Spring Roo. 

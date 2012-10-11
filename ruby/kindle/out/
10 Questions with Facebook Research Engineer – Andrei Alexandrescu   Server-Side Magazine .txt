@@ -1,0 +1,28 @@
+
+
+
+I personally prefer emacs via nx, the combo works quite swimmingly 
+
+
+
+Once an engineer makes a code change that passes unit tests and lint, they submit for review a so-called "diff" via our Phabricator system, which 
+
+
+
+At the end of the day, the performance is there, and we need every single ounce of it. We have concurrent hash tables with millions and even billions of elements, so we’re careful about our hash functions; we know the vast distinctions between sorting 
+
+
+
+At Facebook samples of interest are in the hundreds of millions and 
+
+
+
+known all over the Net (http://goo.gl/glnAz). I ask much more complicated questions when interviewing 
+
+
+
+The ideal Facebook engineer is a great hacker, a strong generalist (and in addition possibly exceptional depth in some area), 
+
+
+
+Coming up is Microsoft’s GoingNative 2012 conference on Feb 2-3, where I’ll give two talks 

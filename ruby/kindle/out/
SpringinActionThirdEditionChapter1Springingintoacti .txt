@@ -1,0 +1,48 @@
+
+
+
+Lightweight and minimally invasive development with plain old Java objects (POJOs) Loose coupling through dependency injection and interface orientation Declarative programming through aspects and common conventions 
+
+
+
+Boilerplate reduction through aspects and templates 
+
+
+
+These heavyweight frameworks forced developers to write classes that were littered with unnecessary code, locked into their framework, and were often difficult to write tests against. 
+
+
+
+jdbcTemplate.queryForObject( 
+
+
+
+There’s no single Spring container. Spring comes with several container implementations that can be categorized into two distinct types. Bean factories 
+
+
+
+providing basic support for DI. Application contexts (defined by the org.springframework.context.ApplicationContext interface) build on the notion of a bean factory by providing application framework services, such as the ability to resolve textual messages from a properties file and the ability to publish application events to 
+
+
+
+There’s no single Spring container. Spring comes with several container implementations that can be categorized into two distinct types. Bean factories (defined by the org.springframework.beans.factory.BeanFactory interface) are the simplest of containers, 
+
+
+
+I won’t be talking about SpringWS in this book, but you can read more about it from its home page at 
+
+
+
+Spring Integration offers implementations of several common integration patterns in Spring’s declarative style. We won’t cover Spring Integration in this book. 
+
+
+
+Spring Batch is outside of the scope of this book. 
+
+
+
+Spring Social is relatively new and didn’t make it into this book. 
+
+
+
+Spring Mobile is a new extension to Spring to support development of mobile web applications. 

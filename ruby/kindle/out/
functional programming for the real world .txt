@@ -1,0 +1,4 @@
+
+
+
+In functional programming, most of the data structures are immutable, which means that we cannot modify them. 

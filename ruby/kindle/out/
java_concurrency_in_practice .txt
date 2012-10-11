@@ -1,0 +1,188 @@
+
+
+
+Threads allow multiple streams of program control flow to coexist within a process. They share process wide resources such as memory and file handles, but each thread has its own program counter, stack, and local variables. Threads also provide a natural decomposition for exploiting hardware parallelism on multiprocessor systems; 
+
+
+
+the garbage collector usually runs in one or more dedicated threads. 
+
+
+
+When properly designed, multithreaded programs can improve throughput by utilizing available processor resources more effectively. 
+
+
+
+Non blocking I/O has its own benefits, but better OS support for threads means that there are fewer situations for which it is essential. 
+
+
+
+@NotThreadSafe public class UnsafeSequence { private int value; /** Returns a unique value. */ public int getNext() { return value++; } 
+
+
+
+Often the easiest way to achieve this is to ensure that objects accessed by the TimerTask are themselves thread safe, thus encapsulating the thread safety within the shared objects. 
+
+
+
+The servlets specification requires that a servlet be prepared to be called simultaneously from multiple threads. In other words, servlets need to be thread safe. 
+
+
+
+When the RMI code calls your remote object, in what thread does that call happen? You don't know, but it's definitely not in a thread you created 
+
+
+
+Swing programs achieve their thread safety by confining all access to GUI components to the event thread. If an application wants to manipulate the GUI from outside the event thread, it must cause the code that will manipulate the GUI to run in the event thread instead. 
+
+
+
+It is far easier to design a class to be thread safe than to retrofit it for thread safety later. 
+
+
+
+One thread accessing a StatelessFactorizer cannot influence the result of another thread accessing the same StatelessFactorizer; because the two threads do not share state, it is as if they were accessing different instances. 
+
+
+
+It is only when servlets want to remember things from one request to another that the thread safety requirement becomes an issue. 
+
+
+
+The possibility of incorrect results in the presence of unlucky timing is so important in concurrent programming that it has a name: a race condition. 
+
+
+
+@NotThreadSafe public class LazyInitRace { private ExpensiveObject instance = null; public ExpensiveObject getInstance() { if (instance == null) instance = new ExpensiveObject(); return instance; } } 
+
+
+
+We refer collectively to check then act and read modify write sequences as compound actions: sequences of operations that must be executed atomically in order to remain thread safe. 
+
+
+
+private final AtomicLong count = new AtomicLong(0); 
+
+
+
+Every Java object can implicitly act as a lock for purposes of synchronization; these built in locks are called intrinsic locks or monitor locks. 
+
+
+
+Intrinsic locks in Java act as mutexes (or mutual exclusion locks), which means that at most one thread may own the lock. 
+
+
+
+Reentrancy is implemented by associating with each lock an acquisition count and an owning thread. When the count is zero, the lock is considered unheld. When a thread acquires a previously unheld lock, the JVM records the owner and sets the acquisition count to one. If that same thread acquires the lock again, the count is incremented, and when the owning thread exits the synchronized block, the count is decremented. When the count reaches zero, the lock is released. 
+
+
+
+Without reentrant locks, the very natural looking code in Listing 2.7, in which a subclass overrides a synchronized method and then calls the superclass method, would deadlock. Because the doSomething methods in Widget and LoggingWidget are both synchronized, each tries to acquire the lock on the Widget before proceeding. But if intrinsic locks were not reentrant, the call to super.doSomething would never be able to acquire the lock because it would be considered already held, and the thread would permanently stall waiting for a lock it can never acquire. 
+
+
+
+Serializing access to an object has nothing to do with object serialization (turning an object into a byte stream); serializing access means that threads take turns accessing the object exclusively, rather than doing so concurrently. 
+
+
+
+The fact that every object has a built in lock is just a convenience so that you needn't explicitly create lock objects. 
+
+
+
+synchronizing every method, as Vector does, is not enough to render compound actions on a Vector atomic: if (!vector.contains(element)) vector.add(element); This attempt at a put if absent operation has a race condition, even though both contains and add are atomic. 
+
+
+
+additional locking is required when multiple operations are combined into a compound action. 
+
+- Your Bookmark Location 737 | Added on Thursday, August 9, 2012 9:21:30 AM
+
+
+
+
+
+The portions of code that are outside the synchronized blocks operate exclusively on local (stack based) variables, which are not shared across threads and therefore do not require synchronization. 
+
+
+
+There is no guarantee that operations in one thread will be performed in the order given by the program, as long as the reordering is not detectable from within that thread even if the reordering is apparent to other threads.[1] 
+
+
+
+in the absence of synchronization, the Java Memory Model permits the compiler to reorder operations and cache values in registers, and permits CPUs to reorder operations and cache values in processor specific caches. 
+
+
+
+Reading data without synchronization is analogous to using the READ_UNCOMMITTED isolation level in a database, where you are willing to trade accuracy for performance. 
+
+
+
+Out of thin air safety applies to all variables, with one exception: 64 bit numeric variables (double and long) that are not declared volatile (see Section 3.1.4). The Java Memory Model requires fetch and store operations to be atomic, but for nonvolatile long and double variables, the JVM is permitted to treat a 64 bit read or write as two separate 32 bit operations. If the reads and writes occur in different threads, it is therefore possible to read a nonvolatile long 
+
+
+
+and subsequently thread B enters a synchronized block guarded by the same lock, the values of variables that were visible to A prior to releasing the lock are guaranteed to be visible to B upon acquiring the lock. 
+
+
+
+When a field is declared volatile, the compiler and runtime are put on notice that this variable is shared and that operations on it should not be reordered with other memory operations. Volatile variables are not cached in registers or in caches where they are hidden from other processors, so a read of a volatile variable always returns the most recent write by any thread. 
+
+
+
+volatile variables for visibility of arbitrary state is more fragile and harder to understand than code that uses locking. 
+
+
+
+A common mistake that can let the this reference escape during construction is to start a thread from a constructor. When an object creates a thread from its constructor, it almost always shares its this reference with the new thread, 
+
+
+
+Swing uses thread confinement extensively. The Swing visual components and data model objects are not thread safe; instead, safety is achieved by confining them to the Swing event dispatch thread. To use Swing properly, code running in threads other than the event thread should not access these objects. 
+
+
+
+Another common application of thread confinement is the use of pooled JDBC (Java Database Connectivity) Connection objects. The JDBC specification does not require that Connection objects be thread safe.[9] In typical server applications, a thread acquires a connection from the pool, uses it for processing a single request, and returns it. 
+
+
+
+Another reason to make a subsystem single threaded is deadlock avoidance; this is one of the primary reasons most GUI frameworks are single threaded. 
+
+
+
+Conceptually, you can think of a ThreadLocal<T> as holding a Map<Thread,T> that stores the thread specific values, though this is not how it is actually implemented. The thread specific values are stored in the Thread object itself; when the thread terminates, the thread specific values can be garbage collected. 
+
+
+
+private static ThreadLocal<Connection> connectionHolder = new ThreadLocal<Connection>() { public Connection initialValue() { return DriverManager.getConnection(DB_URL); } }; 
+
+
+
+An object whose fields are all final may still be mutable, since final fields can hold references to mutable objects. 
+
+
+
+An object is immutable if: Its state cannot be modified after construction; All its fields are final;[12] and It is properly constructed (the this reference does not escape during construction). 
+
+
+
+There is a difference between an object being immutable and the reference to it being immutable. Program state stored in immutable objects can still be updated by "replacing" immutable objects with a new instance holding new state; 
+
+
+
+it is a good practice to make all fields final unless they need to be mutable. 
+
+
+
+The built in mechanisms for efficiently waiting for a condition to become true wait and notify are tightly bound to intrinsic locking, and can be difficult to use correctly. 
+
+
+
+To create operations that wait for a precondition to become true before proceeding, it is often easier to use existing library classes, such as blocking queues or semaphores, to provide the desired state dependent behavior. 
+
+
+
+the class library provides wrapper factory methods (Collections.synchronizedList and friends) so they can be used safely in multithreaded environments. These factories use the Decorator pattern (Gamma et al., 1995) to wrap the collection with a synchronized wrapper object; the wrapper implements each method of the appropriate interface as a synchronized method that forwards the request to the underlying collection object. 
+
+
+
+There are advantages to using a private lock object instead of an object's intrinsic lock (or any other publicly accessible lock). Making the lock object private encapsulates the lock so that client code cannot acquire it, whereas a publicly accessible lock allows client code to participate in its synchronization policy correctly or incorrectly. 

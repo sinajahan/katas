@@ -1,4 +1,4 @@
-file = 'input2.txt'
+file = 'input.txt'
 raise "Error: file not found: #{file}" unless File.exists? file
 
 map = Hash.new
@@ -16,10 +16,9 @@ clipings.each do |cliping|
 end
 
 map.each { |key, value|
-  if key.include? 'Spring in Action'
-    out = value.join
-    out = out.gsub(/- Your Highlight Location .*$/, "")
-    puts out 
-  end
-  
+  out = value.join
+  out = out.gsub(/- Your Highlight Location .*$/, "")
+  output = File.open("out/#{key}.txt", 'w')
+  output << out 
+  output.close
 }

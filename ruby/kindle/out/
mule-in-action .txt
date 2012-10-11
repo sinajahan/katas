@@ -1,0 +1,100 @@
+
+
+
+Mule is a lightweight event-driven enterprise 
+
+
+
+it more closely resembles a rich and diverse toolbox than a shrink-wrapped application. 
+
+
+
+As Michael Nygard puts it, “Real enterprises are always messier than the enterprise 
+
+
+
+many errors were made, leading to the impressive failure rate of 70 percent for all EAI projects in 2003.3 While solving integration 
+
+
+
+I found that there was a lot of infrastructure work to be done before you can really start thinking about implementing any logic. I regard this infrastructure work as “donkey work” as it needs doing for every project. I preferred Mule over Donkey and Ass just didn’t seem right 
+
+
+
+When Mule transitioned from version 1 to version 2, it went through a major overhaul that was mainly driven by the adoption of Spring 2 as its configuration and wiring framework. 
+
+
+
+Mainly focused on higher-level concerns, whereas Mule deals extensively with all the details of integration. 
+
+
+
+For some help with the selection process and a broader view of ESBs in general and open source ones in particular, you can turn to another book from Manning Publications Co. named Open Source ESBs in Action (Rademakers and Dirksen). 
+
+
+
+If you’re familiar with the book Enterprise Integration Patterns,5 you’ll 
+
+
+
+A connector is in charge of controlling the usage of a particular protocol. 
+
+
+
+An endpoint represents the specific usage of a protocol, whether it’s for listening/ polling, reading from (requesting in Mule’s terminology), or writing to a particular target destination. 
+
+
+
+Filters are a powerful complement to the routers. 
+
+
+
+Mule was introduced as an event-driven platform. Indeed, the default model (see section 1.3.1) used by Mule for processing requests is based on the work of Matt Welsh on the definition of a staged event-driven architecture (SEDA). 
+
+
+
+Asynchronous response—in 
+
+
+
+Synchronous response—to 
+
+
+
+No response—if 
+
+
+
+
+
+
+
+Thanks to the support of a few core Spring schemas, Mule can accept Spring elements in its configuration. Spring elements are used to instantiate and configure any object that’ll be used elsewhere in the configuration, where they’ll usually be injected in standard Mule elements. 
+
+
+
+If you’re unfamiliar with Spring or would like to learn more about it, we strongly recommend reading Spring in Action 
+
+
+
+values are called properties. They’re generally used to define environment-specific parameters such as credentials, port numbers, or paths. 
+
+
+
+With Spring XML configurations, a good practice is leveraging Spring’s PropertyPlaceholderConfigurer to load properties from several files on the classpath. The idea is to define reasonable defaults for the development environment in a properties file embedded in the 
+
+
+
+you might be wondering if Mule will connect to the Internet to download the different schemas from the specified locations. Of course it doesn’t. Each library (transport or module) embeds the schemas it needs. 
+
+
+
+using Spring XML is one possibility for building a Mule configuration. As we said in the introduction, there are other ways, such as scripting. 
+
+
+
+Then get ready for a “duh” moment. This means you’ve forgotten to add to your classpath the Mule library that defines the namespace 
+
+
+
+In the following sections, we’ll detail these strategies: ■ Independent configurations ■ Inherited configurations ■ Imported configurations ■ Heterogeneous 

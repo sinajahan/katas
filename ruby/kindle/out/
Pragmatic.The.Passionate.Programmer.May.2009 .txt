@@ -1,0 +1,756 @@
+
+
+
+That’s a terrible feeling of regret. I hate the feeling that my presence doesn’t really matter and that the world would have been exactly no different in a 
+
+
+
+lead remarkable lives when we start our careers. Most of us are content to go with the flow. 
+
+
+
+I remember the exact moment when I decided that my career would be remarkable. 
+
+
+
+Kent Beck’s Extreme Programming 
+
+
+
+Object Mentor’s Extreme Programming Immersion course. Extreme Programming Immersion was the place to go if you wanted to learn about XP. It was like getting a backstage pass to a weeklong concert put on by our favorite rock stars. 
+
+
+
+The only way to find yourself around those people as often as possible is to become one of those people. 
+
+
+
+A musician wants to either be great (and famous for it!) or not do it at all. 
+
+
+
+To excel at a company, you’re going to have to understand how you fit into the business’s plan to make money. 
+
+
+
+How do you get find recognition in both your company and the industry as a whole without “sucking up”? 
+
+
+
+Or, you could invest your money in a small startup company. 
+
+
+
+businesses worldwide is a safer, but potentially less rewarding, choice than picking a flashy new technology that nobody has deployed yet. 
+
+
+
+Map them out on paper from left to right; the left is bleeding edge, and the right is filled by technologies that are in their sunsets. 
+
+
+
+The offshore market has injected its low-cost programmers into a relatively narrow set of 
+
+
+
+technologies. Java and .NET programmers are a dime a dozen in India. India has a lot of Oracle DBAs as well. 
+
+
+
+In fact, a software person should understand a business domain not only well enough to develop software for it but also to become one of its 
+
+
+
+authorities. 
+
+
+
+You should put the same level of care into selecting which industry to serve as you put into selecting which technologies to master. Now is the time to think about business domains you invest your time in. 
+
+
+
+Schedule lunch with a businessperson. Talk to them about how they do their job. 
+
+
+
+Ask about the specifics of their daily work. Talk to them about how technology helps them (or slows them down) on the job. 
+
+
+
+which is “Always be the worst guy in every band you’re in.”2 
+
+
+
+The people around you affect your own performance. Choose your crowd wisely. 
+
+
+
+Pick an open source project that you admire and whose developers appear to be at that “next level” you’re looking to reach. Go through the project’s to-do list or mailing list archives, pick a feature or a major bug fix, and code away! 
+
+
+
+TIOBE Software uses Internet search engines to indicate the relative popularity of programming languages, 
+
+
+
+In his essay “Great Hackers,”4 Paul Graham annoyed the industry 
+
+
+
+I argued for adding Smalltalk to the list of keywords our headhunters were using 
+
+
+
+Learn a new programming language. But, don’t go from Java to C# or from C to C++. Learn a new language that makes you think in a new way. If you’re a Java or C# programmer, try learning a language like Smalltalk or Ruby that doesn’t employ strong, static typing. 
+
+
+
+try a functional language like Haskell or Scheme. 
+
+
+
+any other third party you might look to, your parents are going to give you fear-driven advice. Fear-driven advice is geared toward not losing. Thinking about not losing is not the way to win! 
+
+
+
+Sure, it’s safe, but it’s no fun. 
+
+
+
+A well-rounded software professional has seen many angles of the industry: product development, IT support, internal business systems development, and government work. 
+
+
+
+Take calculated risks with your career. Don’t let fear consume you. 
+
+
+
+Generalists are rare...and, therefore, precious. 
+
+
+
+Rung on the career ladder • Platform/OS 
+
+
+
+Code vs. data • Systems vs. applications • Business vs. IT 
+
+
+
+a person who knows how to lead people and projects but can also roll up their sleeves and fix some lastminute critical bugs while the offshore team is sleeping. 
+
+
+
+Programmer geeks can’t lead, and leaders can’t hack. It’s rare to find someone who’s even decent at both. 
+
+
+
+“How would you write a program, in pure Java, that would make the Java Virtual Machine crash?” 
+
+
+
+To start the interview, I asked this person (and all the others I had interviewed that week) to rate himself on a scale of one to ten. 
+
+
+
+Too many of us seem to believe that specializing in something simply means not knowing about other things. 
+
+
+
+nearly none of whom could explain how a Java class loader works or give a high-level overview of how memory management is typically handled by a Java Virtual Machine. 
+
+
+
+I wanted folks who could say “been there, done that” in 80 percent of the situations we might encounter and whose depth of knowledge could make the remaining 20 percent more livable. 
+
+
+
+take some time to learn about the internals of how your VM works. 
+
+
+
+take some time to study just what happens when you compile a source file. 
+
+
+
+What does it actually mean to import an external library? How does your compiler, operating system, or virtual machine link multiple pieces of code together to form a coherent system? 
+
+
+
+Find an opportunity—at work or outside—to teach a class on some aspect of a technology that you would like to develop some depth in. As you’ll see in Be a Mentor, teaching is one of the best ways to learn. 
+
+
+
+Why would you want to trust a technology company with your career? 
+
+
+
+professional services barrier is the artificial barrier that a company erects between you and the solution to a problem you may have so that it can profit from selling you support services. 
+
+
+
+until you reach the professional services barrier. The 
+
+
+
+download the open source JBoss or Geronimo servers, and set aside time for yourself to not only learn how to operate the servers but to study their internals. 
+
+
+
+“Let the vendors come and go—I know how to design a system!” 
+
+
+
+Work because you couldn’t not work. 
+
+
+
+We can’t all be Mozart or Coltrane. But, we can all take a big step away from mediocrity by finding work we are passionate about. 
+
+
+
+Starting next Monday, keep two weeks of a simple log. Every workday when you wake up, rate your level of excitement on a scale from 1 to 10—1 means you would rather come down with an actual sickness than go to work, and 10 means you could hardly stay in bed because you were consumed by the idea of getting the next thing done. 
+
+
+
+Each day, log yesterday’s excitement level. If after two weeks things are looking sad, it might be time to consider a major change. 
+
+
+
+which lead me to Gopher and then the World Wide Web. 
+
+
+
+that was eventually released as the JavaServer Web Development Kit. Not many people remember that piece of software. But most people who work with Java on the server side knows about the next release of that code. It’s called Tomcat. And it was released to the world via the Apache Software Foundation with a sidekick called Ant. 
+
+
+
+And I’ve never defined myself by my skills. Instead, I’ve always defined myself by what I have done 
+
+
+
+and what I want to do next. Skills are just a way to get there. 
+
+
+
+Just what is a fish in the software indus try? It’s the process of using a tool or some Don’t wait to be told. 
+
+
+
+Just what is a fish in the software indus try? It’s the process of using a tool or some Don’t wait to be told. facet of a technology 
+
+
+
+When you start up a J2EE container, what actually happens? You may not be an application server developer, but knowing how this stuff works enables you to develop solid code 
+
+
+
+extremely useful questions about any given area to drill down into the murky layers: How does it work? and Why does this (have to) happen? 
+
+
+
+How does the IIS server end up passing requests to my ASP.NET pages? Why do I have to generate these interfaces and deployment descriptors for my EJB applications? How does my compiler deal with dynamic vs. static linking? Why do we calculate tax differently if a shopper lives in Montana? 
+
+
+
+won’t be outdated at any time soon: the basics of business finance. Regardless of your line of business, 
+
+
+
+looking like a row of squirming children on a long car ride. None of us understood what was being presented, and none of us cared. We blamed what we felt was a complete waste of time on the incompetent managers who had called the meeting. 
+
+
+
+how were we supposed to creatively help the business be profitable if we didn’t even understand how the business worked? 
+
+
+
+Go get a book on basic 
+
+
+
+business, and work through it. A trick for finding a good overview book is to look for books about getting a master’s of business administration (MBA) degree. One such book that I found particularly useful (and pleasantly short) is The Ten-Day MBA 
+
+
+
+Ask someone to walk you through the financials of your company or division and explain them to you (if this is information your company doesn’t mind sharing with its employees). 3. Explain them back. 4. Find out why the bottom line is called the bottom line. 
+
+
+
+If I were to ask a handful of jazz musicians, “Who is your mentor?” most of them would have an answer. Now ask the same question of programmers. 
+
+
+
+If you’re a programmer, you can show them your code and get pointers. If you’re planning to give a presentation at the office or a local user group meeting, you can run it by your mentor beforehand for feedback. 
+
+
+
+someone you can trust enough to ask, “What should be different about me as a professional?” because you know that they’ll not only criticize you but they’ll help you improve. 
+
+
+
+If you’re a programmer, you can show them your code and get pointers. If you’re planning to give a presentation at the office or a local user group meeting, you can run it by your mentor beforehand for feedback. A mentor is 
+
+
+
+a person in such a role would have the respect of a significant network of people. The mentor becomes a positively reinforced connection from you to his or her network. The importance of this kind of connection can’t be underestimated. After all, the phrase “It’s not what you know. It’s who you know” isn’t a cliche for nothing. 
+
+
+
+Nobody has to explicitly ask someone to be their mentor (though it’s definitely not a bad thing if you do). In fact, your mentor may not even know they are serving that role for you. What’s important is that you have someone you trust and admire that can help give you career guidance and 
+
+
+
+help you hone your craft. 
+
+
+
+Be a Mentor If you want to really learn something, try teaching it to someone else. There’s no better way to crystallize your understanding of something than to force yourself to express it to someone else so that they can understand it. 
+
+
+
+which he said that whenever he wants to really learn about something, he writes about it. 
+
+
+
+I saw Martin Fowler6 give a talk to a room of developers in Bangalore, in 
+
+
+
+You also shouldn’t underestimate that it just feels good to help people. 
+
+
+
+Look for someone to take under your wing. You might find someone younger and less experienced 
+
+
+
+Find an online forum, and pick a topic. Start helping. 
+
+
+
+As an industry, we need to 
+
+
+
+make time for practice. 
+
+
+
+any favorite pieces of open source software? How about trying to add a feature? 
+
+
+
+My favorite exercise is to write a program that prints the lyrics to the tired old song “99 Bottles of Beer on the Wall.“ How could you write such a program without doing any variable assignments? 
+
+
+
+make sure you’re not practicing during your performances (on the job). You have to make time for practice. It’s your responsibility. 
+
+
+
+if you’re not interested in competing with others, TopCoder offers a practice room with a large collection of practice problems that you can use as excellent fodder for your practice sessions. 
+
+
+
+Code Kata—Dave Thomas, one of the Pragmatic Programmers 
+
+
+
+Pick a software development methodology, and pick up a book, start reading websites, and join a mailing list. Look at the methodology with a critical eye. What do you think would be its strong and weak points? 
+
+
+
+So do sculptors and painters. Studying the work of masters is an essential part of becoming a master. 
+
+
+
+How do other programmers solve particular problems algorithmically? 
+
+
+
+Isaac Newton said, “If I have seen further, it is by standing on the shoulders of giants.” 
+
+
+
+Pick a project, and read it like a book. Make notes. Outline the good and the bad. Write a critique, and publish it. 
+
+
+
+Find a group of like-minded people, and meet once a month. Each session have someone nominate some code to study—2 lines to 200 lines. Break it down. 
+
+
+
+Automation is part of the DNA of our industry. 
+
+
+
+Pick a task you normally do repetitively, and write a code generator for it. 
+
+
+
+From a customer’s perspective, I learned that no matter how cool the technology seemed to be, it was valuable only if it solved a real problem that was urgent and provided quantifiable benefits. 
+
+
+
+this helped me change my way of thinking from being technology-centric to being solution-centric. 
+
+
+
+did not have the opportunity to really understand how companies operate, how they make money, what makes them sustainable, and how they innovate. 
+
+
+
+I did not realize until much later how important it was that they heard about us from a trusted source. The lesson here is that if you ever need to get in touch with a venture capitalist, work hard 
+
+
+
+I have compiled this list and am sharing the questions with you in case you ever need to raise money from VCs in the future; see http://www.enterprisecorp.com/ resources/assessment.htm). 
+
+
+
+In the case of a weekend coding race, you don’t have time to put tasks off, so you don’t. You can’t delay making a decision, so you don’t. You can’t avoid the boring work, and you know that you have to do it so quickly that nothing can get too boring. 
+
+
+
+“I did that earlier this week,” he would say. “It’s checked into version control. Have a look.” This was constantly happening with Rao. It happened so often that the only way it could have been a coincidence is if Rao was literally doing everything imaginable with every piece of software that our team maintained. 
+
+
+
+he later told me the trick was that he was only doing things that I had already said I wanted. 
+
+
+
+People who can keep a project moving in the right direction without being given much guidance are highly valued and appreciated by their often overworked managers and customers. 
+
+
+
+Try to see the system from their points of view. 
+
+
+
+truth be told, many of us just don’t have visibility into how we can do this at the level from which we’re grasping. 
+
+
+
+I can remember my team attending quarterly all-hands meetings and feeling completely disjointed and alienated. “What is this achievement we’re celebrating? What do all of these metrics mean?” 
+
+
+
+your manager’s problem, and you’ve solved a problem for the team. 
+
+
+
+Solve 
+
+
+
+The agenda is for you to understand your manager’s goals for the team over the coming month, quarter, and year. Ask how you can make a difference. 
+
+
+
+The sad thing about this guy is that, because he’s living in the next job, he’s usually doing a mediocre job in his current role. 
+
+
+
+Here’s a secret: that feeling will never end. If and when you finally land the big promotion you’ve been dreaming about, you’ll quickly grow tired and realize that it’s not this job you were meant for—it’s the next one. 
+
+
+
+You’ll find that it’s very pragmatic, though. Focusing on the present allows you to enjoy the small victories of daily work life: 
+
+
+
+Put your career goals away for a week. Write down your goals for your current job. 
+
+
+
+think about what you want to have accomplished when you finish the job you’re in. What can you have produced in this job that will be great? 
+
+
+
+How well would you perform if you could treat the most uninteresting and annoying tasks with the same feverish desire to do them right? 
+
+
+
+Look at your workday and ask yourself, “How good a job can I do today?” You’ll find that you’ll like your job better, and your job will like you.9 
+
+
+
+Now’s the hard part: how much value did you produce last year? What was your positive impact on the company’s bottom line? We already know that you cost the company (in our imaginary scenario) roughly $120k. What did you give back? How much money did you cause the company to save? 
+
+
+
+Is that number bigger than twice your salary? 
+
+
+
+But in few cases do the companies they leave actually feel a significant impact as a result of their departure. In most cases, even in critical positions, the effect is surprisingly low. 
+
+
+
+could be knocked off of his pedestal any day. Today could be it, he’d say. 
+
+
+
+One of the few real pieces of advice that I ever got from this CIO— and I heard it over and over again—is that you should never get too comfortable. He professed to waking up every day and intentionally and explicitly reminding himself that he 
+
+
+
+Learn to Love Maintenance 
+
+
+
+smoothly and for as little money as possible. 
+
+
+
+But in maintenance mode, all we’re expected to do is keep the software running 
+
+
+
+leader, architect, designer, coder, and tester. 
+
+
+
+As long as you’re keeping it running and responding to user requests in a timely fashion, maintenance mode is a place of freedom and creativity. You are project leader, architect, designer, coder, and tester. 
+
+
+
+renamed forty-hour workweek to “eight-hour burn.” The idea is that you should work so relentlessly that there is no way that you could continue longer than eight hours. 
+
+
+
+If you have seventy hours available, each hour is less precious to you than when you have forty hours available. 
+
+
+
+You get to work and think, I’ve only got eight hours! Go, go, go! 
+
+
+
+My work usually nags me when I haven’t paid enough attention to it. I might be letting a specific task slip or letting tasks pile up and not taking care of them. 
+
+
+
+If you work intensely every day, you’ll find that the work doesn’t follow you home. 
+
+
+
+Make sure you sleep well tonight. Tomorrow, eat breakfast and then start work at an exact time (preferably a little earlier than usual). Work intensely for four hours. Take an hour lunch. Then work for four more hours so intensely that you are absolutely exhausted and can’t do any more. Go home, relax, and have fun. 
+
+
+
+So, we add assertions that crash our programs when something goes wrong 
+
+
+
+Even if you’re not wholly to blame, take responsibility and move on. The goal is to move past this point as quickly as possible. 
+
+
+
+Ask for help. Even if you are solely to blame for a problem, don’t let your pride make it worse by refusing help in a resolution. Your team members, management, and customers will look at you in a much more positive light if you can maintain a healthy attitude and set your ego aside while 
+
+
+
+What we humans fail to internalize is that “yes” is not always the right answer. And, “no” is seldom the wrong answer. 
+
+
+
+If I have a team member who has the strength to say “no” when that’s the truth, then I know that when they say “yes,” they really mean it. 
+
+
+
+So, here’s how I’m learning to not panic. When something bad happens and I start to feel that sinking, stressed-out feeling that leads to panic, I compare myself to the frustrated computer-illiterate, and I laugh at myself. 
+
+
+
+You also probably have a direct manager, and you may have one or more customers and a project manager. Take these different groups (or whichever actually apply given the structure of your 
+
+
+
+workplace), and list them. 
+
+
+
+Start keeping a development diary. Write a 
+
+
+
+little in it each day, explaining what you’ve been working on, justifying your design decisions, and vetting tough technical or professional decisions. 
+
+
+
+Remember, you need to make it personal, and to do that you have to remember the natural human tendency to want to work with other humans—not voicemail, e-mail, or instant messaging but actual people. 
+
+
+
+You need to try to simulate the kind of casual, coffee-break conversation that you might experience if you lived and worked in the same place, so budget time for (apparently) spontaneous conversations. 
+
+
+
+continue into “What do you generally do on the weekends?” Try to actually learn about the people you work with. 
+
+
+
+As a software developer, that means framing your accomplishments in the context of the business you work for. 
+
+
+
+then (here’s where it might hurt) “What is the benefit of that?” The moral of the story was that you should always have your elevator speech ready, just in case. 
+
+
+
+random GE employee might have gotten on with him. He would then turn and ask the already-frightened underling, “What are you working on?” and 
+
+
+
+as a programmer today, you need to think beyond the next promotion or even your current place of employment. 
+
+
+
+Start by writing about (and linking to) the stories in your aggregator 
+
+
+
+that you find interesting. 
+
+
+
+Just as we started easily with the Web in our writing endeavors, you can start your speaking career in your local developer group meetings. 
+
+
+
+You have something to teach. You will never feel 100 percent ready, so you might as well start now. 
+
+
+
+After the three weeks are over, pick your two favorite articles and submit them to user-moderated news sites 
+
+
+
+such as Digg and Reddit. 
+
+
+
+Your name is your brand. 
+
+
+
+Google yourself —Search 
+
+
+
+Google for your full name in quotes. 
+
+
+
+Anyone can use Rails. Few can say Rails contributor. 
+
+
+
+Stuart Halloway15 does a workshop at conferences he calls “Refactotum.” If you get a chance to participate, 
+
+
+
+The only way to stand out in the crowd, he says, is truly to be outstanding. 
+
+
+
+source software, writing books and articles, and speaking at conferences may all increase your remarkability. 
+
+
+
+Releasing successful open 
+
+
+
+What can you do that would make you and your accomplishments like the purple cow? Don’t just master a subject—write the book on it. Write code generators that take what used to be a one-week process to a five-minute process. 
+
+
+
+coworkers, become your city’s most recognized authority on whatever technologies you’re focusing on by doing seminars and workshops. 
+
+
+
+Instead of being respected among your 
+
+
+
+the really good people won’t mind if you want to know them. 
+
+
+
+smart, well-connected people who can teach you things or help find you work is possibly the best way to improve yourself, but a lot of us are afraid to try. 
+
+
+
+Some of the most influential minds in software development are readily accessible via e-mail or even real-time chat. 
+
+
+
+Pick one of your favorite pieces of software and e-mail its creator. Start by thanking him or her for the software. Then make a suggestion, ask a question, or make some other attempt at establishing a human connection with them. 
+
+
+
+Many times the delivery date of a solution can have a rippling effect on the success of the project or even on the company’s performance. 
+
+
+
+You need to dig deeper to find out what commercial constraints the business is operating under. 
+
+
+
+Your shiny new skills are already obsolete. 
+
+
+
+If you’ve mastered the Big One of any given time period, such as J2EE or .NET at the time this book was published, you may feel extremely comfortable. 
+
+
+
+The job you were hired to do no longer exists. You might still be drawing a paycheck. You might be adding value. You might even be making your employer ecstatically happy. But, you’ve already lost your job. 
+
+
+
+It has no logical end. What most of us fail to realize is that the path is the end. 
+
+
+
+the next time you have to wash the dishes, don’t wash them to get them done. Try to enjoy the experience of washing the dishes. Don’t focus on finishing them. Focus on the act of washing them itself. 
+
+
+
+Sun might attempt to suddenly make its language and virtual machine into a last-minute profit center. It might fragment the Java language with incompatible changes, causing an industry-wide panic. 
+
+
+
+You’ll notice the same phenomenon with your career. Actually, you won’t notice it. That’s the problem. 
+
+
+
+If you have a calendar program that pops up reminders, make appointments for yourself for self-evaluation. 
+
+
+
+In Zen and the Art of Motorcycle Maintenance 
+
+
+
+So, make your improvements small and incremental but daily. 
+
+
+
+How have you taken better action today for improving your career than you did 
+
+
+
+The problem is that the safety blanket of corporate hierarchy slows you down. If you can hide behind the shield of mediocrity that most corporate divisions 
+
+
+
+If you happen to be looking for one, try 
+
+
+
+http://toothpastefordinner.com. I’ve giggled away many an hour there. 

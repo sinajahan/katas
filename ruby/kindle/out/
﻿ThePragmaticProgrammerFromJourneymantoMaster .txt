@@ -1,0 +1,196 @@
+
+
+
+“When I use a word,” Humpty Dumpty said, in rather a scornful tone, “it means just what I choose it to mean—neither more nor less.” 
+
+
+
+We feel it’s an attitude, a style, a philosophy of approaching problems and their solutions. They think beyond the immediate problem, always trying to place it in its larger context, always trying to be aware of the bigger picture. After all, without this larger context, how can you be pragmatic? 
+
+
+
+Another key to their success is that they take responsibility for everything they do, 
+
+
+
+The greatest of all weaknesses is the fear of appearing weak. 
+
+
+
+Make sure everyone actively monitors the environment for changes. 
+
+
+
+communicate as one: generate a brand. When you start a project, come up with a name for it, ideally something off-the-wall. (In the past, we’ve named projects after things such as killer parrots that prey on sheep, optical illusions, and mythical cities.) Spend 30 minutes coming up with a zany logo, and use it on your memos and reports. Use your team’s name liberally when talking with people. It sounds silly, but it gives your team an identity to build on, and the world something memorable to associate with your work. 
+
+
+
+There is an implicit hierarchy here—the closer to the user you’re allowed, the more senior you are. 
+
+
+
+Divide your people into small teams, each responsible for a particular functional aspect of the final system. 
+
+
+
+The project needs at least two “heads”—one technical, the other administrative. 
+
+
+
+The technical head sets the development philosophy and style, assigns responsibilities to teams, and arbitrates the inevitable “discussions” between people. 
+
+
+
+The administrative head, or project manager, schedules the resources that the teams need, monitors and reports on progress, and helps decide priorities in terms of business needs. 
+
+
+
+A great way to ensure both consistency and accuracy is to automate everything the team does. 
+
+
+
+Civilization advances by extending the number of important operations we can perform without thinking. 
+
+
+
+People just aren’t as repeatable as computers are. Nor should we expect them to be. 
+
+
+
+Another favorite tool of automation is cron 
+
+
+
+When you don’t run tests regularly, you may discover that the application broke due to a code change made three months ago. Good luck finding that one. 
+
+
+
+Misleading information is worse than no information at all. 
+
+
+
+We like to publish these documents automatically as part of the nightly build or as a hook intoLicensed bythe source code check-in procedure. 
+
+
+
+while code inspection is effective, conducting reviews in meetings is not 
+
+
+
+Just because you have finished hacking out a piece of code doesn’t mean you can go tell your boss or your client that it’s done. 
+
+
+
+Unit testing Integration testing Validation and verification 
+
+
+
+Resource exhaustion, errors, and recovery Performance testing Usability testing 
+
+
+
+After you have written a test to detect a particular bug, cause the bug deliberately and make sure the test complains. 
+
+
+
+Testing the Tests 
+
+
+
+If you are really serious about testing, you might want to appoint a project saboteur. The saboteur’s role is to take a separate copy of the 
+
+
+
+source tree, introduce bugs on purpose, and verify that the tests will catch them. 
+
+
+
+Test State Coverage, Not Code Coverage 
+
+
+
+need to add a new test to trap it next 
+
+
+
+a bug slips through the net of existing tests, you 
+
+
+
+Once a human tester finds a bug, it should be the last time a human tester finds that bug. 
+
+
+
+In general, comments should discuss why something is done, its purpose and its goal. The code already shows how it is done, 
+
+- Your Note Location 4271 | Added on Sunday, January 29, 2012, 02:36 PM
+
+do we have a git plug in for this?
+
+
+
+However, it can be useful to include information on the date of last change and the person who made it.9 
+
+
+
+You don’t feel that you should waste effort describing what something does until it actually does it. Does this sound like programming by coincidence 
+
+
+
+In reality, the success of a project is measured by how well it meets the expectations of its users. 
+
+
+
+“managing expectations”—actively controlling what users should hope to get from their systems. 
+
+
+
+If we are responsible for a design, or a piece of code, we do a job we can be proud of. 
+
+
+
+Kent Beck’s successful eXtreme Programming method 
+
+
+
+People should see your name on a piece of code and expect it to be solid, well written, tested, and documented. A really professional job. Written by a real professional. 
+
+
+
+There are two world-class professional societies for programmers: the Association for Computing Machinery (ACM)1 and the IEEE Computer Society.2 We recommend that all programmers belong to one (or both) of these societies. 
+
+
+
+IEEE Computer. 
+
+
+
+IEEE Software. 
+
+
+
+SIGPLAN. 
+
+
+
+Bookshelf titles at http://pragmaticprogrammer.com. 
+
+
+
+Unix. W. Richard Stevens has several excellent books including Advanced Programming in the Unix Environment and the Unix Network Programming books 
+
+
+
+www.slashdot.org 
+
+
+
+The comp.object FAQ 
+
+
+
+Alistair Cockburn’s Home Page 
+
+
+
+Robert C. Martin’s Home Page www.objectmentor.com 

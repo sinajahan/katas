@@ -1,0 +1,12 @@
+
+
+
+Then I started thinking about all the programmers who don't know what a heap is, and furthermore probably don't even need to know. 
+
+
+
+On a vertical axis, a programmer could barely know how to use vbscript, or they could be writing compilers for Intel and developing scientific computation software 
+
+
+
+On a horizontal axis, they could be experts on databases, or weeding performance out of a GPU, or building concurrent processing libraries, or making physics engines, or doing image processing, or generating 3D models, or writing printer drivers, or using coffeescript, HTML5 and AJAX to build web apps, or using nginx and PHP for writing the LAMP stack the web app is sitting on, or maybe they write networking libraries or do artificial intelligence research. They are all programmers. 

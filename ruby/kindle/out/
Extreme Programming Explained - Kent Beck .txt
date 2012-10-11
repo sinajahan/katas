@@ -1,0 +1,264 @@
+
+
+
+Like patterns, XP builds on best practices such as unit testing, pair programming, and refactoring. 
+
+
+
+You don't get to choose whether or not you will write tests—if you don't, you aren't extreme: end of discussion. 
+
+
+
+Software development fails to deliver, and fails to deliver value. This failure has huge economic and human impact. We need to find a new way to develop software. The basic problem of software development is risk. 
+
+
+
+Project canceled—XP asks the customer to choose the smallest release that makes the most business sense, so there is less to go wrong before going into production and the value of the software is greatest. 
+
+
+
+Staff turnover—XP asks programmers to accept responsibility for estimating and completing their own work, gives them feedback about the actual time taken so their estimates can improve, 
+
+
+
+Pairs don't just make test cases run. They also evolve the design of the system. Changes aren't restricted to any particular area. 
+
+
+
+We will control four variables in our projects—cost, time, quality, and scope. Of these, scope provides us the most valuable form of control. 
+
+
+
+Quality is another strange variable. Often, by insisting on better quality you can get projects done sooner, or you can get more done in a given amount of time. This happened to me when I started writing unit tests (as described in Chapter 2, A Development Episode, page 7). As soon as I had my tests, I had so much more confidence in my code that I wrote faster, without stress. I could clean up my system more easily, which made further development easier. I've also seen this happen with teams. As soon as they start testing, or as soon as they agree on coding standards, they start going faster. 
+
+
+
+Keeping the cost of change low doesn't just happen magically. There are technologies and practices that keep software pliable. 
+
+
+
+The four values of XP are: q Communication q Simplicity q Feedback q Courage 
+
+
+
+The XP coach asks the team, "What is the simplest thing that could possibly work?" 
+
+
+
+Optimism is an occupational hazard of programming. Feedback is the treatment. 
+
+
+
+The customers review the schedule every two or three weeks to see if the team's overall velocity matches the plan, and to adjust the plan. 
+
+
+
+What is to say that you won't ever develop yourself into a corner? Courage. 
+
+
+
+The four values—communication, simplicity, feedback, and courage—give us our criteria for a successful solution. 
+
+
+
+The time you save on the 98% of problems for which this is true will give you ridiculous resources to apply to the other 2%. In many ways, this is the hardest principle for programmers to swallow. 
+
+
+
+The difference is between playing to win and playing not to lose. Most software development I see is played not to lose. 
+
+
+
+Software features that can't be demonstrated by automated tests simply don't exist. 
+
+
+
+tests—if these two tests work, then you can safely conclude that this third test will work without having to write it. Of course, this is exactly the same kind of reasoning that leads to bugs in programs, 
+
+
+
+Good design organizes the logic so that a change in one part of the system doesn't always require a change in another part of the system. 
+
+
+
+Design is part of the daily business of all programmers in XP in the midst of their coding. 
+
+
+
+Those are the activities we have to help structure: q Coding q Testing q Listening q Designing 
+
+
+
+Simple design—The system should be designed as simply as possible at any given moment. Extra complexity is removed as soon as it is discovered. 
+
+
+
+Neither business considerations nor technical considerations should be paramount. Software development is always an evolving dialog between the possible and the desirable. 
+
+
+
+Any program feature without an automated test simply doesn't exist. 
+
+
+
+One partner, the one with the keyboard and the mouse, is thinking about the best way to implement this method right here. The other partner is thinking more strategically: q Is this whole approach going to work? q What are some other test cases 
+
+
+
+Overtime is a symptom of a serious problem on the project. The XP rule is simple—you can't work a second week of overtime. 
+
+
+
+On-Site Customer A real customer must sit with the team, available to answer questions, resolve disputes, and set small-scale priorities. By "real customer" I mean someone who will really use the system when it is in production. 
+
+
+
+Any one practice doesn't stand well on its own (with the possible exception of testing). They require the other practices to keep them in balance. 
+
+
+
+Figure 4. The practices support each other 
+
+
+
+The basic XP management tool is the metric. For example, the ratio between estimated development time and calendar time is the basic measure for running the Planning Game. 
+
+
+
+The basic XP management tool is the metric. For example, the ratio between estimated development time and calendar time is the basic measure for running the Planning Game. It lets the team set the Project Velocity. 
+
+
+
+Coaching is primarily concerned with the technical execution (and evolution) of the process. The ideal coach is a good communicator, not easily panicked, technically skilled (although this is not an absolute requirement), and confident. 
+
+
+
+The coach is just the opposite. The measure of a coach is how few technical decisions he or she makes: The job is to get everybody else making good decisions. The coach doesn't take responsibility for many development tasks. 
+
+
+
+On my team, we reward ourselves with food and beverage. 
+
+
+
+I say, "Too bad." I have software to write, and if getting rid of a partition helps me write that software better, I'm going to do it. 
+
+
+
+While the choice of a technology might seem at first to be a purely technical decision, it is actually a business decision, but one that must be taken with input from Development. 
+
+
+
+Collective ownership is this seemingly crazy idea that anyone can change any piece of code in the system at any time. Without the tests, you'd simply be dead trying to do this. 
+
+
+
+On an XP project you are never stuck with someone else's stupidity. You see something in the way, you get it out of the way. 
+
+
+
+Start with a test, so we will know when we are done. We have to do a certain amount of design just to write the test: 
+
+
+
+When faced with a big refactoring, you have to take it in small steps (incremental change again). 
+
+- Your Bookmark Location 1263 | Added on Wednesday, July 11, 2012 8:08:00 AM
+
+
+
+
+
+In the year I spent on this system we made many small steps toward our desired design. We pushed responsibility in the Contract subclasses either into the Function or the Product subclasses. At the end of my contract we still hadn't eliminated the Contract subclasses, but they were much slimmer than at the beginning, and they were clearly on their way out. 
+
+
+
+My objection is not to pictures, but to trying to keep multiple forms of the same information synchronized. 
+
+
+
+The tests are also automatic. Tests are most valuable when the stress level rises, when people are working too much, when human judgment starts to fail. 
+
+
+
+customers write tests story-by-story. The question they need to ask themselves is, "What would have to be checked before I would be confident that this story was done?" Each scenario they come up with turns into a test, in this case a functional test. 
+
+
+
+That's why an XP team of any size carries at least one dedicated tester. The tester's job is to translate the sometimes vague testing ideas of the customer into real, automatic, isolated tests. 
+
+
+
+Adopt XP one practice at a time, always addressing the most pressing problem for your team. Once that's no longer your most pressing problem, go on to the next problem. 
+
+
+
+When you need to fix a bug, write a test first. q When you need to refactor, write tests first. 
+
+
+
+You will have to educate your customer about the rules of the game. The customer will have to decide what constitutes the next release. 
+
+
+
+your chances of consistently adopting new practices aren't very good. Under stress, you revert to old habits. 
+
+
+
+If a week won't suffice to get a particular piece of technology up and running, then I would have to classify that technology as a risk. It doesn't mean that you shouldn't use it. But you should explore it more carefully and consider alternatives. 
+
+
+
+With a team that is completely new to a technology or domain, you might have to spend a few months. 
+
+
+
+The purpose of the planning phase is for the customers and programmers to confidently agree on a date by which the smallest, most valuable set of stories will be done. 
+
+
+
+The first iteration puts the architecture in place. Pick stories for the first iteration that will force you to create "the whole system," even if it is in skeletal form. 
+
+
+
+Make a little ceremony out of the end of each iteration—buy pizza, shoot off fireworks, have the customer sign the completed story cards. Hey, you have just shipped quality software on time. 
+
+
+
+While you are exploring, measure the effect production support has on your development activities. 
+
+
+
+That's the good reason to die—the customer is happy with the system and can't think of anything they would like to add for the foreseeable future. (I've never experienced this, but I've heard about it, so I included it here.) 
+
+
+
+The next time the team is making estimates, you need to be able to say, "Two thirds of our estimates last time were at least 50% too high." 
+
+
+
+Coach As coach, you are responsible for the process as a whole. You notice when people are deviating from the team's process and bring this to the team's attention. You remain calm when everyone else is panicking, 
+
+
+
+For example, if you don't get them the new tester they asked for, they will explain exactly what they think that will do to the schedule. 
+
+
+
+seems crazy, but sometimes it is easier to do something more complicated than to do something simple. This is particularly true when you have been successful doing the complicated thing in the past. 
+
+
+
+Be prepared to have people react strongly when you explain XP, however. 
+
+
+
+Completion Bonus An excellent way to align the interests of supplier and customer in fixed price or T&M is to provide a bonus for timely completion of the project. 
+
+
+
+The evil twin of the completion bonus is the late penalty. 
+
+
+
+Doing work that doesn't matter q Having projects canceled because I didn't make enough technical progress q Making business decisions badly q Having business people make technical decisions badly for me q Coming to the end of a career of building systems and realizing that I should have spent more time with my kids q Doing work I'm not proud of 
