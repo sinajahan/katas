@@ -9,7 +9,7 @@ import observerpattern.Observer;
 public class Display implements Observer<Data> {
 
     @Override
-    public void update(Data data) {
+    public final void update(final Data data) {
         System.out.println(data);
     }
 }
